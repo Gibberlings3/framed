@@ -1,4 +1,0 @@
-mklink /j "framed" "C:\Users\Laurie\Beamdog Library\framed\framed"
-
-unlink with:
-rmdir framed
