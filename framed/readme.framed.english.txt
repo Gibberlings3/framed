@@ -9,7 +9,7 @@ GENERAL DESCRIPTION
 ------------------------------------------------------------------------
 This mod requires BGEE or EET
 
-The Framed mod provides 2 different versions of Chapter 6 and makes going to Candlekeep a possible side quest not involving the Iron Throne.  If Candlekeep is visited before the Iron Throne Building is investigated, Eltan will have a differnt task for the group to be done in Chapter 6.  To experience the new version, a work order will need to be obtained from Bently (Friendly Arm Inn) or Scar (initial meeting only and only if PC admits to clearing the Nashkel minds) during Chapter 5.
+The Framed mod provides 2 different versions of Chapter 6 and makes going to Candlekeep a possible side quest not involving the Iron Throne.  If Candlekeep is visited before the Iron Throne Building is investigated, Eltan will have a different task for the group to be done in Chapter 6.  To experience the new version, a work order will need to be obtained from Bentley (Friendly Arm Inn) or Scar (initial meeting only and only if PC admits to clearing the Nashkel minds) during Chapter 5.
 
 ------------------------------------------------------------------------
 COMPATABIITY NOTES
