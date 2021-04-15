@@ -31,21 +31,21 @@ BEGIN
 		
 	// We need handles on some NPCs for scripting
 	COPY_EXISTING ~POGHM9.CRE~ ~override~
-		WRITE_ASCII 0x280 ~Dopple1~ #32 // set DV
+		WRITE_ASCII 0x280 ~POGHM9~ #32 // set DV
 	COPY_EXISTING ~CAT.CRE~ ~override~
-		WRITE_ASCII 0x280 ~Kitty~ #32 // set DV
+		WRITE_ASCII 0x280 ~CAT~ #32 // set DV
 	COPY_EXISTING ~CATDEAD.CRE~ ~override~
-		WRITE_ASCII 0x280 ~DeadKitty~ #32 // set DV
+		WRITE_ASCII 0x280 ~CATDEAD~ #32 // set DV
 	COPY_EXISTING ~KOVERA.CRE~ ~override~
 		WRITE_ASCII 0x280 ~Koveras~ #32 // set DV
 	COPY_EXISTING ~BENDAL.CRE~ ~override~
-		WRITE_ASCII 0x280 ~Bendalis~ #32 // set DV
+		WRITE_ASCII 0x280 ~BENDAL~ #32 // set DV
 	COPY_EXISTING ~CHANTE2.CRE~ ~override~
-		WRITE_ASCII 0x280 ~Chanter2~ #32 // set DV
+		WRITE_ASCII 0x280 ~CHANTE2~ #32 // set DV
 	COPY_EXISTING ~SHISTA.CRE~ ~override~
 		WRITE_ASCII 0x280 ~Shistal~ #32 // set DV
 	COPY_EXISTING ~GATEWA2.CRE~ ~override~
-		WRITE_ASCII 0x280 ~Gatewarden2~ #32 // set DV
+		WRITE_ASCII 0x280 ~GATEWA2~ #32 // set DV
 	COPY_EXISTING ~KEEPER.CRE~ ~override~
 		WRITE_ASCII 0x280 ~Keeper~ #32 // set DV
 	COPY_EXISTING ~PHLYDI3.CRE~ ~override~

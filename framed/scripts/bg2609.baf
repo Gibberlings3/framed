@@ -10,6 +10,6 @@ THEN
 	RESPONSE #100
 		SetGlobal("#L_FCleared","MYAREA",1)
 		ActionOverride("Koveras",DestroySelf())
-		ActionOverride("Bendalis",DestroySelf())
-		ActionOverride("Chanter2",DestroySelf())
+		ActionOverride("BENDAL",DestroySelf())
+		ActionOverride("CHANTE2",DestroySelf())
 END

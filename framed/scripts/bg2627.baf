@@ -10,8 +10,8 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#L_FCleared","MYAREA",1)
-		ActionOverride("Dopple1",DestroySelf())
-		ActionOverride("Kitty",DestroySelf())
-		ActionOverride("DeadKitty",DestroySelf())
+		ActionOverride("POGHM9",DestroySelf())
+		ActionOverride("CAT",DestroySelf())
+		ActionOverride("CATDEAD",DestroySelf())
 END
 

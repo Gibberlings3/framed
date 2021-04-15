@@ -31,6 +31,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#L_FCleared","MYAREA",1)
-		ActionOverride("GateWarden2",ChangeAIScript("",CLASS))
+		ActionOverride("GATEWA2",ChangeAIScript("",CLASS))
 END
 
