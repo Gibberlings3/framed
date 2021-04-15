@@ -1,0 +1,14 @@
+////////////////////////////
+// Web trap for catacombs // 
+// Also spawns a spider   //
+////////////////////////////
+
+IF
+	Entered([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(LastTrigger,14381)  // Trap Sprung
+		ForceSpell(LastTrigger,WIZARD_WEB)  // SPWI215.SPL (Web)
+		CreateCreatureObject("SpidGi",[PC],0,0,0)
+END
+

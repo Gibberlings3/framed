@@ -1,0 +1,15 @@
+///////////////////////////////////////////
+// Get rid of Sarevok from the 2nd floor //
+///////////////////////////////////////////
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		ActionOverride("Koveras",DestroySelf())
+		ActionOverride("Bendalis",DestroySelf())
+		ActionOverride("Chanter2",DestroySelf())
+END

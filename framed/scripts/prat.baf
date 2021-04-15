@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////
+// Prat needs to get rid of a scroll in chapter 5 // 
+////////////////////////////////////////////////////
+
+IF
+	Global("Chapter","GLOBAL",5)
+	HasItem("Scrl2n",Myself)
+THEN
+	RESPONSE #100
+		DestroyItem("Scrl2N") 
+END
+

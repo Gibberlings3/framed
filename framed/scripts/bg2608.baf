@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////
+// Allow Camryn/Tamah quest to be completed in Chapter 5 //
+// with no doppleganger, though                          //
+///////////////////////////////////////////////////////////
+
+IF
+	Global("chapter","GLOBAL",5)
+	Global("TICamryn","GLOBAL",4)
+	!Dead("TICam")  // Camryn
+	!Dead("TITamah")  // Tamah
+	!Exists("TICam")  // Camryn
+	!Exists("TITamah")  // Tamah
+THEN
+	RESPONSE #100
+		SetGlobal("TICamryn","GLOBAL",5)
+		CreateCreature("TICam",[1756.1188],W)  // Camryn
+		CreateCreature("TITamah",[1760.1255],SEE)  // Tamah
+		ActionOverride("TICam",StartDialogNoSet([PC]))
+END
+

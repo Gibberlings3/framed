@@ -1,0 +1,35 @@
+////////////////////////////
+// 1st level of catacombs // 
+// Get rid of Phlydia     //
+// Add lots of spiders    //
+////////////////////////////
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		ActionOverride("Phlydi3",DestroySelf())
+		CreateCreature("SpidSw",[3362.1255],SE)
+		CreateCreature("SpidGi",[3250.1255],SE)
+		CreateCreature("SpidPh",[3350.1165],SE)
+		CreateCreature("SpidSw",[2400.1800],E)
+		CreateCreature("SpidSw",[2640.1880],NE)
+		CreateCreature("SpidPh",[3030.2040],NE)
+		CreateCreature("SpidPh",[3200.1955],NW)
+		CreateCreature("SpidSw",[470.1700],SE)
+		CreateCreature("SpidGi",[575.1650],SE)
+		CreateCreature("SpidPh",[700.1800],SE)
+END
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",6)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		TriggerActivation("#LF_Web1",False)
+END

@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////
+// Changes to the Iron Throne 5th floor for Chapter 6 //
+////////////////////////////////////////////////////////
+
+IF
+	Global("Chapter","GLOBAL",6)
+	Global("#LF_RoomSet","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_RoomSet","MYAREA",1)
+		CreateCreature("RIELTA",[680.990],NE)
+		CreateCreature("BRUNOS",[770.955],NE)
+		Kill("Rieltar")
+		Kill("Bruno")
+END
+
+IF
+	Global("LettersFound","MYAREA",0)
+	Global("Chapter","GLOBAL",6)
+	OR(2)
+		PartyHasItem("SCRL3A")
+		PartyHasItem("SCRL3C")
+THEN
+	RESPONSE #100
+		SetGlobal("LettersFound","MYAREA",1)
+		EraseJournalEntry(%JOURNAL_IRON_THRONE%)  // Eltan's Orders Duke Eltan of Baldur's Gate has ordered us to investigate the Iron Throne. A good start would be their headquarters in the southern quadrant of the city.
+		AddJournalEntry(@3011,QUEST)
+END

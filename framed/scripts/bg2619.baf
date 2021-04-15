@@ -1,0 +1,15 @@
+////////////////////////////
+// 2st level of catacombs // 
+// Add Phlydia            //
+////////////////////////////
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		CreateCreature("Phlydi3",[4235.1690],SW)
+END
+

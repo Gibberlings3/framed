@@ -1,0 +1,21 @@
+///////////////////////////////////////////////
+// Post-prologue Candlekeep exterior/grounds //
+///////////////////////////////////////////////
+
+IF
+	!Global("Chapter","GLOBAL",6)
+	Global("#L_FInfo2618_Deactivated","MYAREA",0)
+THEN
+	RESPONSE #100
+		TriggerActivation("Info2618",False)
+		SetGlobal("#L_FInfo2618_Deactivated","MYAREA",1)
+END
+
+IF
+	Global("Chapter","GLOBAL",6)
+	Global("#L_FInfo2618_Deactivated","MYAREA",1)
+THEN
+	RESPONSE #100
+		TriggerActivation("Info2618",True)
+		SetGlobal("#L_FInfo2618_Deactivated","MYAREA",0)
+END

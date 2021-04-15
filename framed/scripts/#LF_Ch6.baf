@@ -1,0 +1,29 @@
+//////////////////////////////////
+// Start of Alternate Chapter 6 //
+//////////////////////////////////
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+
+		// Remove Eltan from his last position
+		// Next time we see him he'll be on his death bed in chapter 7
+		StorePartyLocations()
+		SmallWait(2)
+		LeaveAreaLUA("%SWBaldursGate_FlamingFistHQ_L2%","",[410.210],W)
+		SmallWait(2)
+		ActionOverride("ELTAN",DestroySelf())
+		SmallWait(2)
+		RestorePartyLocations()
+		SmallWait(2)
+		MultiPlayerSync()
+
+		IncrementChapter("#LF_CH6")
+
+		FadeFromColor([20.0],0)
+		SmallWait(2)
+		AddJournalEntry(@3010,INFO)
+		EndCutSceneMode()
+END

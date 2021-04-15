@@ -1,0 +1,15 @@
+/////////////////////////////////
+// 4th floor of Library        // 
+// Get rid of the doppleganger //
+/////////////////////////////////
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		ActionOverride("Shistal",DestroySelf())
+END
+

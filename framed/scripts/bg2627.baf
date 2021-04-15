@@ -1,0 +1,17 @@
+//////////////////////////////////////////
+// Priest Quarters                      // 
+// Get rid of the doppleganger and cats //
+//////////////////////////////////////////
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		ActionOverride("Dopple1",DestroySelf())
+		ActionOverride("Kitty",DestroySelf())
+		ActionOverride("DeadKitty",DestroySelf())
+END
+

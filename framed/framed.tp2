@@ -1,0 +1,84 @@
+BACKUP ~weidu_external/backup/framed~
+SUPPORT ~~
+VERSION ~v1.0~
+
+README ~framed/readme.framed.%LANGUAGE%.txt~ ~framed/readme.framed.english.txt~
+
+ALWAYS
+	ACTION_IF !VARIABLE_IS_SET deja_vu BEGIN
+		// Global static variables used by WeiDU
+		OUTER_SPRINT mod_root "framed"
+		OUTER_SPRINT external_loc "weidu_external"
+		OUTER_SPRINT tra_base "languages"
+		OUTER_SPRINT base_language "american"
+		OUTER_SPRINT workspace "%external_loc%/workspace/%mod_root%"
+		OUTER_SPRINT tra_loc "%workspace%/%tra_base%"
+
+		// Makes external working directories	
+		// And copies language files to them
+		INCLUDE ~%mod_root%/lib/run_once.tpa~
+		LAF DO_RUN_ONCE END
+
+		// Variables used to point to files and stuff
+		INCLUDE ~%mod_root%/lib/#l_cmpvars.tpa~
+
+		// Library functions I use frequently
+		INCLUDE ~%mod_root%/lib/alter_script.tpa~
+		INCLUDE ~%mod_root%/lib/update_bcs.tpa~
+	END
+
+	// This needs to be run before every component for some reason
+	// It has something to do with languages that use a different character set
+	ACTION_DEFINE_ARRAY thismod_noconvert BEGIN setup END
+	ACTION_DEFINE_ARRAY thismod_reload BEGIN game cases END
+
+	LAF HANDLE_CHARSETS 
+		INT_VAR 
+			infer_charsets = 1 
+		STR_VAR 
+			iconv_path = EVAL "%mod_root%/%tra_base%/iconv"
+			tra_path = EVAL "%tra_loc%"
+			noconvert_array = thismod_noconvert
+			reload_array = thismod_reload
+	END
+
+	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+		FAIL @1 /* ~Argent's DLC Merger is required before mods can be installed on this game.~ */
+	END
+	ACTION_IF ((NOT GAME_IS ~bgee bg2ee eet~) AND (NOT GAME_INCLUDES ~sod~)) BEGIN
+		FAIL @2 /* ~This mod requires BGEE or EET~ */
+	END
+
+	ACTION_IF !VARIABLE_IS_SET deja_vu BEGIN
+		// This actually installs changes to a 2da file so want it to run after the game check
+		INCLUDE ~%mod_root%/lib/cases.tpa~
+		LAF INSTALL_PROPER_CASES END
+
+		OUTER_SET deja_vu = 1
+	END
+END
+
+// Can't use variables here for some reason
+// Not sure why we use both folders, but that's what the example did
+LANGUAGE ~American English~ ~american~   
+	~framed/languages/american/game.tra~
+	~weidu_external/workspace/framed/languages/american/game.tra~
+	~framed/languages/american/setup.tra~
+	~weidu_external/workspace/framed/languages/american/setup.tra~
+	~framed/languages/american/cases.tra~
+	~weidu_external/workspace/framed/languages/american/cases.tra~
+
+////////////////////////////////////////////////
+// PPROVIDE 2 DIFFERENT VERSIONS OF CHAPTER 6 //
+////////////////////////////////////////////////
+BEGIN @11	// Mod 0
+	SUBCOMPONENT @10
+	LABEL "#L-FRAMED-VOICE"
+	INCLUDE ~framed/components/framed.tpa~
+	LAF framed INT_VAR use_voice = 1 END
+
+BEGIN @12	// Mod 1
+	SUBCOMPONENT @10
+	LABEL "#L-FRAMED-NO_VOICE"
+	INCLUDE ~framed/components/framed.tpa~
+	LAF framed INT_VAR use_voice = 0 END

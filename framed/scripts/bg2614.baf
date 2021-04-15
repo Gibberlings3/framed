@@ -1,0 +1,36 @@
+/////////////////////////////////
+// 6th floor of Library        // 
+// Get rid of the Gate Warden  //
+// We just left him outside    //
+/////////////////////////////////
+
+IF
+	Global("Teth","GLOBAL",2)
+	Global("#L_ArkSet","MYAREA",0)
+THEN
+	RESPONSE #100
+		FadeToColor([1.0],0)
+		StartCutSceneMode()
+		SmallWait(1)
+		SetGlobal("#L_ArkSet","MYAREA",1)
+		CreateCreatureObject("ARKANI3","GateWarden2",0,0,0)
+		SmallWait(1)
+		ActionOverride("ARKANIS",ChangeAIScript("",CLASS))
+		ActionOverride("ARKANIS",ChangeAIScript("",GENERAL))
+		ActionOverride("ARKANIS",ChangeAIScript("",DEFAULT))
+		FadeFromColor([30.0],0)
+		Wait(1)
+		MultiPlayerSync()
+		EndCutSceneMode()		
+END
+
+IF
+	OnCreation()
+	Global("Chapter","GLOBAL",5)
+	Global("#L_FCleared","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FCleared","MYAREA",1)
+		ActionOverride("GateWarden2",ChangeAIScript("",CLASS))
+END
+

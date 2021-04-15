@@ -1,0 +1,207 @@
+//////////////////////////////////////////////////////////////////////////
+// Dialogue additions/replacements so location of murders isn't stated  //
+// as well as keeping the timing of the situation to more general terms //
+//////////////////////////////////////////////////////////////////////////
+
+// Alan Blackblade (AlanBl) replacement line
+@2000	= ~Oh, any number of people, really. The question is, who would have the motive? Fingers are pointing all over. Odds-on favorite is the same person who killed those Iron Throne merchants, though no one seems to have a concrete reason. I would wager that the other Dukes are in some measure of peril as well, though Duke Eltan is close to death already. Some sort of wasting disease, though it defies curing. Hard to imagine an honest sickness that cannot be cured in this day and age. Poison more likely, if you ask me.~
+
+// Flaming Fist bridge guard (FLAMC7)
+@2001	= ~Duke Eltan? The duke is on his deathbed. Commander Angelo Dosan is in command now.~
+@2002	= ~We've been ordered to hunt down the party of mercenaries who murdered those Iron Throne merchants.~
+
+// Some noble/townie (NOBLBA)
+@2003	= ~I do hope they catch those rapscallions that murdered those poor merchants. From what I understand they were trying to frame the Iron Throne for what's really the fault of Amn. To think that Duke Eltan was trusting Amnian spies.~
+
+// Delthyr (some harper) (DELTHY)
+@2004	= ~Good then. I am Delthyr. I represent those who harp. I have been seeking you out for many weeks now. Things have taken a turn for the worse recently. I can tell you everything you need know.~
+@2005	= ~The second-in-command of the Flaming Fist, Scar, was assassinated. Grand Duke Eltan has come down with some mysterious ailment. No one knows how long he has to live. The most important news for you concerns your recent involvement with the Iron Throne. You've been accused of murdering their leaders. Everyone believes that you are agents of Amn. They think your persecution of the Iron Throne was just a cover up for Amn. Tensions run pretty high right now. The new Iron Throne president, Sarevok, has placed a price on all of your heads. The Flaming Fist has a warrant for your arrest. Before I continue, tell me, are you guilty?~
+@2006	= ~From what our network has gathered, the Iron Throne is preparing to make a grab for power in Baldur's Gate. It would be in your best interest to investigate what they're up to. Perhaps if you could re-enter their citadel, you might learn something. I know these are very troubled times for you, but you know more about the Iron Throne than anyone else. If you have any questions for me, ask them now, I'll be gone for the next few days.~
+
+// Kolvar (some Zhent) (KOLVAR)
+@2007	= ~It seems the majority of the high-ups here in the Gate feel that you were working for Amn at the time of the assassinations. Seems to me that someone really wants to get Baldur's Gate paranoid about Amn. It's working really well. There's been talk all over the streets about how Amn is "ready to invade," a load of crap if you ask me. If you haven't heard yet, Scar, second-in-command of the Flaming Fist, was assassinated. The Grand Duke Eltan has been infected by some sort of magical disease; so far his healer has been unable to do anything about it. From what I've been hearing, I think that Sarevok, the new Iron Throne leader, is trying to make a grab for power in Baldur's Gate. I'd suggest that you investigate this "Sarevok." Perhaps you should break into the Iron Throne citadel again. Do you have questions? 'Cause if you do, ask now; I'm on my way out of town to report to the bigwigs in Darkhold.~
+@2008	= ~I can tell you quite a lot, actually. If you haven't heard yet, Scar, second-in-command of the Flaming Fist, was assassinated. The Grand Duke Eltan has been infected by some sort of magical disease; so far, his healer has been unable to do anything about it. From what I've been hearing, I think that Sarevok, the new Iron Throne leader, is trying to make a grab for power in Baldur's Gate.~
+
+// Husam (shadow thief) (HUSAM)
+@2009	= ~Hey, guys. Remember me, your old bud Husam? *hic* Iz so good to see ya all again. Lots has happenedz lately. Heh heh, ya I've beens hearing all sortsa things. I heards you guys are wanted for murders. Hah, so yers murderers, eh? Well, I still like ya. Hey, I have somore info for yas. Do ya want ta hear it?~
+@2010	= ~Okay then. First off, my name really is Husam. I have never owned a business in Baldur's Gate. My associates and I belong to an organization called the Shadow Thieves; I'm sure you've heard of us. I'm here in the Gate because of the lies being spread about our organization and the nation of Amn as a whole. I'm sure you're aware how you were framed as Amnian assassins, or how the deaths of Duke Entar Silvershield and Commander Scar were blamed on the Shadow Thieves. Well, we had nothing to do with it. It seems that someone is going to a lot of trouble to create a feeling of animosity between Baldur's Gate and Amn. Amn has never been interested in a war with this city and has definitely not been responsible for all of the troubles in this region. All of that can be placed squarely upon the shoulders of the Iron Throne, or more specifically Sarevok. Now that I've told you who I am, perhaps you can tell me who you are.~
+
+// Iron Throne Merchant on the first floor (IRONME)
+@2011	= ~Well, friends, if you want to meet the leaders of the Iron Throne, you can find them on the top floor. But they're in an important meeting and don't want to be disturbed.~
+
+// Flaming fist (FLAMAL)
+@2012	= ~I was informed by Aldeth Sashenstar that the criminals wanted for the murders the Iron Throne leaders were hiding out at his home. Not that I would do anything about it now that we're friends. You don't have the face of a murderer.~
+
+// Throne Bartender (BART6)
+@2013	= ~Out of Sembia, eh? Well, if ye're looking for Rieltar or Brunos, you can find them just upstairs. But they're in an important meeting and might not take kindly to being disturbed.~
+
+// Merchants on 3rd floor of Iron Throne bld (IRONM3)
+@2014	= ~Ahhh look, some newcomers. I assume that the lot of you has just arrived with new supplies from Ordulin. If you're looking for Rieltar or Brunos, they're just upstairs, but they're preparing for some important negotiations.~
+
+// Thaldorn (a a leader of the Iron Throne) (THALDO)
+@2015	= ~The other leaders, Brunos and Rieltar, they're in a meeting in the next room, just down the hall. Will you let me go now, please?~
+@2016	= ~I'm one of the western divisional leaders of the Iron Throne. The others are preparing for negotiations with the Knights of the Shield. We have been creating a misinformation campaign to blame the Zhentarim for all the troubles in the region. We are trying to create tensions between the governments of Baldur's Gate and Amn. With iron being the most important resource in a war, the Baldurian government will have to go to us in order to get any. We have disrupted all iron trade through the region using the Blacktalon mercenaries and the Chill. The only known iron mine in the region is at Nashkel, and we have effectively crippled that mine. We have our own mine operating in Cloakwood. When the Baldurian government comes to us for iron, we will be able to make exorbitant trading demands, and thus become the preeminent trading power in this region.~
+
+// Merchant on the 4th floor (IRONM4)
+@2017	= ~They—they're upstairs, preparing for some important conference.~
+@2018	= ~If you're looking for Rieltar and Brunos, you'll find them just upstairs. They're preparing for some sort of clandestine rendezvous.~
+
+// (LAUDEN)
+@2019	= ~Is that a threat? Wait a moment... you... you are the people wanted for murder! The ones that killed those Iron Throne merchants! Sarevok issued a description of you, and all the Flaming Fist are to kill you on sight! Please don't hurt me! I swear I won't tell a soul I saw you!~
+
+// Sorrel (Flaming Fist cleric) (SORREL)
+@2020	= ~I've been a little busy, why?~
+
+// Some noble (NOBLBAZ)
+@2021	= ~You... you look familiar. If I didn't know better, I'd say you were that group of hooligans that killed those Iron Throne merchants! The Flaming Fist issued a description and sketches, and you're the spitting image! Get away from me!~
+@2022	= ~Stand away from me, if you please. I trust no one with common murderers on the loose. Those poor merchants from the Iron Throne cut down, and the people who did it could be anywhere. They could be here me and I would not even know it.~
+@2023	= ~Is that a threat? Wait a moment... you... you are the people wanted for murder! The ones that killed those Iron Throne merchants! Sarevok issued a description of you, and all the Flaming Fist are to kill you on sight! Please don't hurt me! I swear I won't tell a soul I saw you!~
+
+// Some townie (FTOWBAZ)
+@2024	= ~I don't want you bothering me. Who knows who you could be? There's murderers around somewhere, and I hear they's crazy. Killed those poor merchants, they did. That Sarevok is going to make everything all right again. He's got the Flaming Fist in his back pocket he does.~
+
+// Some noble (NOBWBAZ)
+@2025	= ~And who are you to threaten me? Let's have a good look at you, hmm? You do seem to bear a passing resemblance to those vile killers I heard of, the ones who killed those Iron Throne merchants. Likely you are merely posing as them, perhaps trying to make yourselves seem more threatening. I don't believe it for a second. You look like common gutter trash to me. Leave me.~
+
+// Rumors in Beregost, Baldur's Gate, and Friendly Arm (RBEREG & RBALDU & RFRIEN)
+@2026	= ~Did you hear about the assassinations? Seems that the leaders of the Iron Throne went and got themselves killed. Those same people who helped the folks down in Nashkel did the deed. They were Amnian agents, I hear. Anyhow, one of the dead guys' sons is now the leader, Sarevok is his name I think.~
+
+// Gregor, son of Iron Throne Leader Brunos (GREGOR)
+@2027	= ~As much as your eagerness should impress me, it does not. You are a bit late, by my standards. The leadership... of the western division of the Iron Throne... my father and friends... all three are dead. Murdered and I should have seen it coming!~
+
+// Wirthing - merchant in Iron Throne Building (WIRTHI)
+@2028	= ~Why, hello <CHARNAME>. I suppose we should have expected your coming here. Bit of unfortunate business with Brunos and Rieltar, eh wot?~
+
+// Cythandria - one of Sarevok's bimbos (CYTHAN)
+@2029	= ~Mmmmm... so you've come back. If you were smart, <CHARNAME>, you would have left well enough alone. I don't know how you escaped my lord's trap, but you won't be getting any farther than here. Why did you come back here? I would have thought that you'd go after Sarevok directly?~
+
+// Garrick if BG1NPC is loaded (%GARRICK_JOINED%)
+@2030	= ~I suppose it was quite a privilege, Garrick. Anyhow, let's go; we've got spiders to kill.~
+@2031	= ~Great attitude, but we can browse the shelves later, Garrick. We've got spiders to kill first.~
+@2032	= ~That'll have to wait, Garrick, we've got spiders to kill first.~
+
+////////////////////////
+// New Quest Dialogue //
+////////////////////////
+// Bently
+@2100	= ~Excuse me, <SIRMAAM>. Folks from Candlekeep were here looking for you.  They wanted me to give this to you if I saw you.~
+@2101	= ~Excuse me, <SIRMAAM>. Folks from Candlekeep were here looking for <CHARNAME>.  They wanted me to give this to <PRO_HIMHER> if I saw <PRO_HIMHER>.~
+
+// Scar
+@2102	= ~Folks from Candlekeep sent a messenger here looking for those that cleared out the Nashkel mines.  They wanted me to give this to you if I saw you.~
+
+// Keeper of the Portal (KEEPER)
+@2103	= ~Welcome back, <CHARNAME>.  Tethoril told me to expect you.  He said you should feel free to visit your friends, rest and resupply.  Then when you were ready to start clearing the catacombs, look for him on the top floor of the library.~
+
+// Dreppin
+@2104	= ~That's terrible!  What some folks won't do just for a bit of extra gold!~
+@2105	= ~Yeah, people come from all over to see the books here. All sorts of folks, too: bards, nobles, priests, mages. Volo's even been here and Elminster, too, remember. You never know, maybe even ol' Drizzt will come to visit some day.~
+
+// Parda
+@2106	= ~Oh, <CHARNAME>, I heard you had returned! I'm so glad you're here to take care of the catacombs. Make sure you have plenty of protections from poison. Those spiders are dreadful.~
+
+// Fuller
+@2107	= ~The Iron Throne? My, you do have your hands full. You be careful, you hear?~
+
+// BG1RE Camryn
+@2108	= ~It is good to see you, <CHARNAME>. I really need to thank you.~
+@2109	= ~You gave me my life back, <CHARNAME>. If we both survive the days ahead, perhaps one day in the future, we will all meet again for a drink in honor of living life.~
+@2110	= ~Tamah and I plan to travel together to Baldur's Gate. We'll stop over at the best Inn we can afford and get to know each other again. And then? Who knows... Although, from the twinkle I yet see in her eyes when she looks at me, I suspect the future may well be delightful. As long as she's with me, my fear seems more...manageable.~
+@2111	= ~I... wrote a letter to you, too. I wasn't sure whether we would meet again, so I did it the way I've done it the last 30 years. (laughs)~
+@2112	= ~Farewell, <CHARNAME>. And again, thank you.~
+
+// Karan
+@2113	= ~Spiders Karan, enormous spiders! I'm just having some fun with you. I should have no trouble with them.~
+@2114	= ~You rapscallion! This place hasn't been the same since the day you left.  Welcome back.~
+
+// Misc priest (POGHM10)
+@2115	= ~Welcome back, <CHARNAME>. I hope the catacombs don't prove to be too difficult for you.~
+
+// Watch9
+@2116	= ~Welcome home, <CHARNAME>.~
+
+// Tethoril (TETHTO2) to transport group to secret library
+@2117	= ~Ah, <CHARNAME>! I'm glad you have come. We can barely step foot in the catacombs for the spiders. Are you ready to go?~
+@2118	= ~Yes, I'm all set.~
+@2119	= ~Not quite yet, I'll return when I am.~
+@2120	= ~Are you now prepared to clear out the catacombs?~
+@2121	= ~The entrance is warded against casual entry.  I'll need to send you to a secret room in the library that has an entrance to the catacombs. To keep the location of the entrance secret, your only exit will be through connecting tunnels that lead outside.~
+@2122	= ~Return to me once you have finished clearing out the infestation and I will have your reward.~
+@2123	= ~How will I get past the Keeper of the Portal?~
+@2124	= ~I have let him know you are to be able to come and go as you please until I say otherwise.~
+@2125	= ~Good luck, <CHARNAME>, though I doubt you'll need it.~
+
+// Keeper of the portal (KEEPER)
+@2126	= ~Welcome back, <CHARNAME>. Go right in.~
+@2127	= ~Come back soon, <CHARNAME>.~
+
+// Arkanis (ARKANI3)
+@2128	= ~I would venture to guess, that was a doppleganger. I hate to think what foul plan was afoot.~
+@2129	= ~Whatever their plan, let's smash it together!~
+@2130	= ~I'd prefer you alerted Tethoril and the Gatewarden to the danger.  I'll take care of the dopplegangers.~
+@2131	= ~Your help is most welcome!~
+@2132	= ~Aye, child, lead on!~
+@2133	= ~As you order, so shall it be, my old comrade. Come, Deder... <CHARNAME> has spoken.~
+
+// Diarmid (Sarevok cronie in Candlekeep caverns) (DIARMID)
+@2134	= ~Where you going Prat? You can't possibly be finished already...it is Prat, isn't it?  Wait! You ain't Prat!~
+@2135	= ~Stay where you are, I have questions.~
+@2136	= ~No chance, buddy!~
+
+// Prat (Sarevok cronie in Candlekeep caverns) (PRAT)
+@2137	= ~Who are you?  How'd you get past our...who are you?!~
+@2138	= ~I could ask you about the same question!  Who are you and what are you doing here?~
+@2139	= ~Damn!  We are in so much trouble...~
+
+// Gatewarden (GATEWA2)
+@2140	= ~Welcome home, <CHARNAME>. It's good to see you again.~
+@2141	= ~You've done a good thing here, <CHARNAME>. It won't be forgotten.~
+
+// Arkanis (ARKANI3)
+@2142	= ~Darn glad you were here to clear out those catacombs! Who knows what would've happened...~
+
+// Tethoril (TETHTO2) wrap up of chapter 5 quest
+@2143	= ~I'm relieved to see you, young one. Arkanis told us what you found. Dopplegangers, I...I dread to think what their plan was.~
+@2144	= ~Whatever it was, it wasn't good.  There were duplicates of just about everyone down there.~
+@2145	= ~We will reseal the entrance into the caverns beneath the keep. Someone must have discovered how to remove the wards.~
+@2146	= ~And now for your reward.  The 2,000 gold we offered you to clear out the spiders is not nearly enough for what you have done for us.~
+@2147	= ~Please accept this with our thanks. You may also come and go as often as you wish. Your old room will be reserved for your sole use. We cannot thank you, enough.~
+@2148	= ~Stay and browse the library for as long as you like. This is once again your home, if you so wish.~
+@2149	= ~Greetings, young one.~
+
+// Gatewarden (GATEWA2)
+@2150	= ~And we will patrol the area regularly to make sure it remains sealed, forever.~
+
+//////////////////////////////////
+// Alternate chapter 6 dialogue //
+//////////////////////////////////
+
+//Duke Eltan (DEltan)
+@2200	= ~Oh, by the way, we received a messenger from Candlekeep. They managed to clear enough of the spiders for their purposes. You'll not be needing their work order any more.~
+
+// Cythandria (CYTHA)
+@2201	= ~There they are!  Those are the ones that killed Rieltar and Brunos!~
+@2202	= ~There <PRO_HESHE> is! <PROPER_HESHE> is the one that killed Rieltar and Brunos!~
+
+/////////////////////
+// Journal Entries //
+/////////////////////
+@3000	= ~The drunk Husam told us that the Iron Throne leaders are going to Candlekeep; for what purpose we do not know.~
+@3001	= ~Candlekeep Catacombs
+Candlekeep is looking for someone to clear their catacombs of a spider infestation.~
+@3002	= ~Candlekeep Catacombs
+The gatekeeper told me to find Tethtoril on the top floor of the library when I'm ready to start clearing the catacombs.~
+@3003	= ~Candlekeep Catacombs
+Tethtoril sent me to the catacombs via a secret room in the library. My only way out is through them and out by way of caverns underneath the keep. He asked me to return to him once I've finished clearing the infestation.~ 
+@3004	= ~Candlekeep Catacombs
+Tethtoril was overjoyed with me stopping a nefarious plan involving dopplegangers. Candlekeep is now open to me and is my home if I so wish.~
+@3010	= ~Chapter 6
+
+With Duke Eltan's blessing, I finally have the authority and permission, nay duty, to thoroughly investigate the Iron Throne's headquarters in Baldur's Gate. I am rapidly closing in on those responsible for the death of Gorion and for hounding my steps throughout the Sword Coast. Just a little further...~ 
+@3011	= ~Investigating the Iron Throne
+From my investigations I have learned that the leaders of the Iron Throne were planning on attending a meeting at Candlekeep. However, someone killed them before they had a chance to leave. I must inform Duke Eltan at once. Were they to be impersonated by dopplegangers, like Emisary Tar?~
+@3012	= ~Chapter 7
+
+Circumstances have suddenly taken a drastic turn for the worse. I have been accused of murdering the Iron Throne leaders. This will undoubtedly multiply the number of those who seek my life.~ 
+@3100	= ~Camryn and Tamah
+Camryn and Tamah have found each other and left Candlekeep - together.~

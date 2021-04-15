@@ -1,0 +1,13 @@
+///////////////////////////////////////////////////////////////////
+// Move Portal Keeper outside of keep when leaving the catacombs //
+///////////////////////////////////////////////////////////////////
+
+IF
+	Entered([PC])
+	Global("#LF_KPInKeep","MYAREA",1)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_KPInKeep","MYAREA",0)
+		ActionOverride("Keeper",JumpToPoint([4522.2650]))
+END
+

@@ -1,0 +1,355 @@
+//////////////////////////////////////////////
+// Installs alternative chapter 6 scenarios //
+//////////////////////////////////////////////
+
+DEFINE_ACTION_FUNCTION framed
+	INT_VAR use_voice = 1		// 0 = Don't use custom voice-over 1 = Use custom voice-over
+BEGIN
+	// Copy externally built objects
+	ACTION_IF (%use_voice% = 1) BEGIN
+		COPY ~%mod_root%/objects/.~ ~override~
+	END
+	
+	// Work order from Candlekeep
+	COPY_EXISTING ~SCRL2J.ITM~ ~override/#LF_CKWO.ITM~
+		SAY NAME1 @1000 // ~Candlekeep Work Order~
+		SAY NAME2 @1000 // ~Candlekeep Work Order~
+		SAY (0x0050) @1001
+		
+	// Sarevok's Diary
+	COPY_EXISTING ~SCRL3F.ITM~ ~override~
+		PATCH_IF MOD_IS_INSTALLED ~bg1npc.tp2~ 131 BEGIN 
+			SAY (0x0050) @1007
+			SAY DESC @1007
+		END ELSE PATCH_IF MOD_IS_INSTALLED ~bg1npc.tp2~ 130 BEGIN
+			SAY (0x0050) @1008
+			SAY DESC @1008
+		END ELSE BEGIN
+			SAY (0x0050) @1006
+			SAY DESC @1006
+		END
+		
+	// We need handles on some NPCs for scripting
+	COPY_EXISTING ~POGHM9.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Dopple1~ #32 // set DV
+	COPY_EXISTING ~CAT.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Kitty~ #32 // set DV
+	COPY_EXISTING ~CATDEAD.CRE~ ~override~
+		WRITE_ASCII 0x280 ~DeadKitty~ #32 // set DV
+	COPY_EXISTING ~KOVERA.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Koveras~ #32 // set DV
+	COPY_EXISTING ~BENDAL.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Bendalis~ #32 // set DV
+	COPY_EXISTING ~CHANTE2.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Chanter2~ #32 // set DV
+	COPY_EXISTING ~SHISTA.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Shistal~ #32 // set DV
+	COPY_EXISTING ~GATEWA2.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Gatewarden2~ #32 // set DV
+	COPY_EXISTING ~KEEPER.CRE~ ~override~
+		WRITE_ASCII 0x280 ~Keeper~ #32 // set DV
+	COPY_EXISTING ~PHLYDI3.CRE~ ~override~
+		WRITE_ASCII 0x280 ~PHLYDI3~ #32 // set DV
+		
+	// Add web trap to the catacombs
+	COPY_EXISTING ~%Candlekeep_Catacombs_L1%.are~ ~override~
+		LPF ADD_AREA_REGION_TRIGGER
+			INT_VAR
+				ab_RT_Type = 0 //-- Type of trigger -- 0=proximity;1=info;2=travel
+				ab_RT_BbLX = 3670 //-- Bounding Box - low x value - LEFT
+				ab_RT_BbLY = 1455 // -- Bounding Box - low y value - TOP
+				ab_RT_BbHX = 3775 //-- Bounding Box - High x value - RIGHT
+				ab_RT_BbHY = 1530 // -- Bounding Box - High y value - BOTTOM
+				ab_RT_VxPr = 4 //-- Number of Vertex Pairs for current region
+				ab_RT_Fbit = 8 // -- Flag bits in bit format which are read right to left - 0=off; 1=on
+				ab_RT_TDtD = 60 //-- Trap Detection Difficulty
+				ab_RT_TRmD = 60 //-- Trap Removal Difficulty
+				ab_RT_TSet = 1 //-- Trap is - 0=no; 1=yes
+				ab_RT_LPoX = 3765 //-- Launch Point X 
+				ab_RT_LPoY = 1527 //-- Launch Point Y 
+				ab_RT_Vx_X_0 = 3670 //-- Point #0 X value  3670.1515		3755.1455
+				ab_RT_Vx_Y_0 = 1515 //-- Point #0 Y value  3695.1530		3775.1475
+				ab_RT_Vx_X_1 = 3755 //-- Point #0 X value
+				ab_RT_Vx_Y_1 = 1455 //-- Point #0 Y value 
+				ab_RT_Vx_X_2 = 3775 //-- Point #0 X value
+				ab_RT_Vx_Y_2 = 1475 //-- Point #0 Y value 
+				ab_RT_Vx_X_3 = 3695 //-- Point #0 X value
+				ab_RT_Vx_Y_3 = 1530 //-- Point #0 Y value 
+			STR_VAR
+				ab_RT_Name = ~#LF_Web1~ //-- Name to assign to new region
+				ab_RT_Rbcs = ~#LF_Web1~ //-- Region Script file
+		END
+		
+	// Need a new intro to chapter 6
+	ACTION_IF (%use_voice% = 1) BEGIN
+		OUTER_SET chp6Txt = RESOLVE_STR_REF(@1002)	// In game.tra
+	END ELSE BEGIN
+		OUTER_SET chp6Txt = RESOLVE_STR_REF(@1003)	// In game.tra
+	END
+	COPY_EXISTING ~CHPTXT6.2DA~ ~override/#LF_Ch6.2da~
+		PATCH_IF (GAME_IS ~eet~) BEGIN
+			READ_2DA_ENTRIES_NOW curList 4
+		END ELSE BEGIN
+			READ_2DA_ENTRIES_NOW curList 3
+		END
+		FOR (iRow = 0; iRow < curList; ++iRow) BEGIN
+			READ_2DA_ENTRY_FORMER curList iRow 0 rowName
+			PATCH_IF ("%rowName%" STR_EQ "DEFAULT") BEGIN 
+				PATCH_IF (GAME_IS ~eet~) BEGIN
+					SET_2DA_ENTRY %iRow% 3 4 %chp6Txt%
+				END ELSE BEGIN
+					SET_2DA_ENTRY %iRow% 2 3 %chp6Txt%
+				END
+			END
+		END
+	BUT_ONLY
+
+	// Need a new intro to chapter 7
+	ACTION_IF (%use_voice% = 1) BEGIN
+		OUTER_SET chp7Txt = RESOLVE_STR_REF(@1004)	// In game.tra
+	END ELSE BEGIN
+		OUTER_SET chp7Txt = RESOLVE_STR_REF(@1005)	// In game.tra
+	END
+	COPY_EXISTING ~CHPTXT7.2DA~ ~override/#LF_Ch7.2da~
+		PATCH_IF (GAME_IS ~eet~) BEGIN
+			READ_2DA_ENTRIES_NOW curList 4
+		END ELSE BEGIN
+			READ_2DA_ENTRIES_NOW curList 3
+		END
+		FOR (iRow = 0; iRow < curList; ++iRow) BEGIN
+			READ_2DA_ENTRY_FORMER curList iRow 0 rowName
+			PATCH_IF ("%rowName%" STR_EQ "DEFAULT") BEGIN 
+				PATCH_IF (GAME_IS ~eet~) BEGIN
+					SET_2DA_ENTRY %iRow% 3 4 %chp7Txt%
+				END ELSE BEGIN
+					SET_2DA_ENTRY %iRow% 2 3 %chp7Txt%
+				END
+			END
+		END
+	BUT_ONLY
+
+	// Addy asks the PC to investigate the iron throne in chapter 7
+	// Make sure she doesn't spawn if we've already been to the palace
+	// In case Transitions or EBG1 is installed
+	COPY_EXISTING ~%CentralBaldursGate%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("AddySpawn","GLOBAL",0)~ ~Global("AddySpawn","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+	
+	// Alan Blackblade is a thief that makes friendly with the group in Ch 7
+	// He has some info on the demise of Entar and Scar that will need to be modified as well
+	// Make sure we've not already been to the palace before he spawns
+	COPY_EXISTING ~%SEBaldursGate%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("AlanSpawn","GLOBAL",0)~ ~Global("AlanSpawn","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+	
+	// Delthyr (some Harper) and Kolvar (some Zhent) give us word of what's going on in chapter 7
+	// Make sure they don't spawn if we've already been to the palace
+	COPY_EXISTING ~%EBaldursGate%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("SpawnDelthyr","GLOBAL",0)~ ~Global("SpawnDelthyr","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("KolvarSpawn","%EBaldursGate%",0)~ ~Global("KolvarSpawn","%EBaldursGate%",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+	COPY_EXISTING ~%NBaldursGate_ThreeOldKegs_L1%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("DelthyrMove","GLOBAL",0)~ ~Global("DelthyrMove","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+	
+	// Sorrel (a named Flaming Fist cleric) also gives us word of what's happening in ch 7
+	COPY_EXISTING ~%NBaldursGate%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("SorrelSpawn","GLOBAL",0)~ ~Global("SorrelSpawn","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+	
+	// Gregor in Iron Throne building (son of Bruno)
+	COPY_EXISTING ~%BaldursGateDocks_IronThrone_L2%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("GregorSpawn","GLOBAL",0)~ ~Global("GregorSpawn","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+
+	// Wirthing in Iron Throne building (merchant)
+	COPY_EXISTING ~%BaldursGateDocks_IronThrone_L4%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("WirthiSpawn","GLOBAL",0)~ ~Global("WirthiSpawn","GLOBAL",0) Global("DukeThanks","GLOBAL",0)~
+		END
+	BUT_ONLY
+
+	// Hold off on advancing to chapter 7 after completing Candlekeep if we're still in chapter 5
+	COPY_EXISTING ~%Candlekeep_Ch6%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("Teth","GLOBAL",2)~ ~Global("Teth","GLOBAL",2) Global("Chapter","GLOBAL",6)~
+		END
+	BUT_ONLY
+	
+	// Watchers don't get summoned if the Iron Throne are dead unless we're in Chapter 6
+	COPY_EXISTING ~%Candlekeep_Library_L2%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("WatchSpawn3","GLOBAL",0)~ ~Global("WatchSpawn3","GLOBAL",0) Global("Chapter","GLOBAL",6)~
+		END
+	BUT_ONLY
+	COPY_EXISTING ~%Candlekeep_Library_L4%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("WatchSpawn2","GLOBAL",0)~ ~Global("WatchSpawn2","GLOBAL",0) Global("Chapter","GLOBAL",6)~
+		END
+	BUT_ONLY
+	
+	// Don't do Ch 6 journal entries when sent to the catacombs
+	COPY_EXISTING ~%Candlekeep_Catacombs_L1Antechamber%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("MainQuestUpdate","%Candlekeep_Catacombs_L1Antechamber%",0)~ ~Global("MainQuestUpdate","%Candlekeep_Catacombs_L1Antechamber%",0) Global("Chapter","GLOBAL",6)~
+		END
+	BUT_ONLY
+	
+	// Use a different journal entry when the scrolls are found in the Iron Throne building
+	COPY_EXISTING ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("LettersFound","%BaldursGateDocks_IronThrone_L5%",0)~ ~Global("LettersFound","%BaldursGateDocks_IronThrone_L5%",0) Global("Chapter","GLOBAL",5)~
+		END
+	BUT_ONLY
+	
+	// Don't have Caedmon (Friendly FF sent by Scar) appear after chapter 5 
+	COPY_EXISTING ~%BaldursGateDocks%.bcs~ ~override~
+		DECOMPILE_AND_PATCH BEGIN
+			REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~Global("CaedmonSpawn","GLOBAL",0)~ ~Global("CaedmonSpawn","GLOBAL",0) Global("Chapter","GLOBAL",5)~
+		END
+	BUT_ONLY
+	
+	// Compile quest scripts
+	COMPILE EVALUATE_BUFFER ~%mod_root%/scripts/#LF_Web1.baf~
+	COMPILE EVALUATE_BUFFER ~%mod_root%/scripts/#LF_Ch6.baf~ USING ~%tra_loc%/%s/framed.tra~
+	EXTEND_TOP ~%Candlekeep_Ch6%.bcs~ ~%mod_root%/scripts/bg2626.baf~
+	EXTEND_TOP ~ch6end.bcs~ ~%mod_root%/scripts/ch6end.baf~
+	EXTEND_TOP ~%Candlekeep_Library_L2%.bcs~ ~%mod_root%/scripts/bg2609.baf~
+	EXTEND_TOP ~%Candlekeep_Library_L4%.bcs~ ~%mod_root%/scripts/bg2611.baf~
+	EXTEND_TOP ~%CandlekeepCaves%.bcs~ ~%mod_root%/scripts/bg5506.baf~
+	EXTEND_TOP ~Prat.bcs~ ~%mod_root%/scripts/prat.baf~
+	EXTEND_TOP ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~%mod_root%/scripts/bg0615.baf~ USING ~%tra_loc%/%s/framed.tra~
+	LAF REPLACE_SCRIPT_BLOCK
+		INT_VAR
+			only_once = 1
+		STR_VAR
+			script = EVAL "%BaldursGateDocks_IronThrone_L1%"
+			match = "SetGlobal("EnteredIronThrone","GLOBAL",1)"
+			insert = "%mod_root%/scripts/bg0616.baf"
+	END
+	LAF UPDATE_BCS
+		INT_VAR
+			action_taken = 1									// 0 = APPEND_FILE TEXT, 1 = EXTEND_TOP, 2 = EXTEND_BOTTOM
+		STR_VAR
+			baf_location = EVAL ~%mod_root%/scripts/~			// like ~mymod/bafs/~
+			baf_name = "bg2627"									// like my_new_BG0146
+			bcs_name = EVAL "%Candlekeep_Ch6_PriestsQuarters%"	// like BG0146
+	END
+	LAF UPDATE_BCS
+		INT_VAR
+			action_taken = 1									// 0 = APPEND_FILE TEXT, 1 = EXTEND_TOP, 2 = EXTEND_BOTTOM
+		STR_VAR
+			baf_location = EVAL ~%mod_root%/scripts/~			// like ~mymod/bafs/~
+			baf_name = "bg2610"									// like my_new_BG0146
+			bcs_name = EVAL "%Candlekeep_Library_L3%"	// like BG0146
+	END
+	LAF UPDATE_BCS
+		INT_VAR
+			action_taken = 1									// 0 = APPEND_FILE TEXT, 1 = EXTEND_TOP, 2 = EXTEND_BOTTOM
+		STR_VAR
+			baf_location = EVAL ~%mod_root%/scripts/~			// like ~mymod/bafs/~
+			baf_name = "bg2614"									// like my_new_BG0146
+			bcs_name = EVAL "%Candlekeep_Library_L6%"	// like BG0146
+	END
+	LAF UPDATE_BCS
+		INT_VAR
+			action_taken = 1									// 0 = APPEND_FILE TEXT, 1 = EXTEND_TOP, 2 = EXTEND_BOTTOM
+		STR_VAR
+			baf_location = EVAL ~%mod_root%/scripts/~			// like ~mymod/bafs/~
+			baf_name = "bg2615"									// like my_new_BG0146
+			bcs_name = EVAL "%Candlekeep_Catacombs_L1%"	// like BG0146
+	END
+	LAF UPDATE_BCS
+		INT_VAR
+			action_taken = 1									// 0 = APPEND_FILE TEXT, 1 = EXTEND_TOP, 2 = EXTEND_BOTTOM
+		STR_VAR
+			baf_location = EVAL ~%mod_root%/scripts/~			// like ~mymod/bafs/~
+			baf_name = "bg2619"									// like my_new_BG0146
+			bcs_name = EVAL "%Candlekeep_Catacombs_L2%"	// like BG0146
+	END
+	
+	// Changes needed for other mods
+	// If BG1RE is loaded - allow Camryn/Tamah quest to be finished in chapter 5
+	ACTION_IF FILE_EXISTS_IN_GAME ~TICam.cre~ BEGIN
+		EXTEND_TOP ~%Candlekeep_Library_L1%.bcs~  ~%mod_root%/scripts/bg2608.baf~
+	END
+	// If Grey is installed before need to wipe out his extra talk
+	// If Grey is installed properly (after this mod) it should work ok
+	OUTER_SPRINT FIX_GREY ~~ 
+	ACTION_IF MOD_IS_INSTALLED ~Setup-c#greythedog.tp2~ 0  BEGIN
+		OUTER_SPRINT FIX_GREY ~4~
+	END
+	// Will need to get some string refs from BG1NPC for Garrick
+	OUTER_SPRINT GARRICK_BG1NPC_CHANGES ~~
+	OUTER_SET STATE_NO_NEED = ~-1~
+	OUTER_SET STATE_ATTITUDE = ~-1~
+	OUTER_SET STATE_MUST_WAIT = ~-1~
+	ACTION_IF MOD_IS_INSTALLED ~bg1npc.tp2~ 0 BEGIN
+		OUTER_SET STATE_NO_NEED = STATE_WHICH_SAYS 25 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~
+		OUTER_SET STATE_ATTITUDE = STATE_WHICH_SAYS 29 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~
+		OUTER_SET STATE_MUST_WAIT = STATE_WHICH_SAYS 21 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~
+		ACTION_IF (STATE_NO_NEED > ~-1~) AND (STATE_ATTITUDE > ~-1~) AND (STATE_MUST_WAIT > ~-1~) BEGIN
+			OUTER_SPRINT GARRICK_BG1NPC_CHANGES ~~~~~ADD_TRANS_TRIGGER %GARRICK_JOINED% %STATE_NO_NEED% ~Global("Chapter","GLOBAL",6)~ DO 0
+			EXTEND_BOTTOM %GARRICK_JOINED% %STATE_NO_NEED%
+				IF ~Global("Chapter","GLOBAL",5)~ THEN REPLY @2030 /* ~I suppose it was quite a privilege, Garrick. Anyhow, let's go; we've got spiders to kill.~ */ DO ~SetGlobal("X#GAFW2608","GLOBAL",2)~ EXIT
+			END
+			ADD_TRANS_TRIGGER %GARRICK_JOINED% %STATE_ATTITUDE% ~Global("Chapter","GLOBAL",6)~ DO 1
+			EXTEND_BOTTOM %GARRICK_JOINED% %STATE_ATTITUDE%
+				IF ~Global("Chapter","GLOBAL",5)~ THEN REPLY @2031 /* ~Great attitude, but we can browse the shelves later, Garrick. We've got spiders to kill first.~ */ DO ~SetGlobal("X#GAFW2608","GLOBAL",2)~ EXIT
+			END
+			ADD_TRANS_TRIGGER %GARRICK_JOINED% %STATE_MUST_WAIT% ~Global("Chapter","GLOBAL",6)~ DO 2
+			EXTEND_BOTTOM %GARRICK_JOINED% %STATE_MUST_WAIT%
+				IF ~Global("Chapter","GLOBAL",5)~ THEN REPLY @2032 /* ~That'll have to wait, Garrick, we've got spiders to kill first.~ */ DO ~SetGlobal("X#GAFW2608","GLOBAL",2)~ EXIT
+			END~~~~~
+		END
+	END
+	
+	// Some strRefs used in the dialogues
+	OUTER_SET REPLY_WHERE_LEADERS_1 = 1496
+	OUTER_SET REPLY_WHERE_LEADERS_2 = 1480
+	OUTER_SET REPLY_WHERE_LEADERS_3 = 1485
+	OUTER_SET REPLY_THALDO_FIRST = 1482
+	OUTER_SET REPLY_THALDO_GO = 1483
+	OUTER_SET REPLY_THALDO_SORRY = 1484
+	OUTER_SET REPLY_BART6_SEMBIA = 7648
+	OUTER_SET REPLY_IRONM4_SEMBI = 7675
+	OUTER_SET REPLY_SCAR_YES = 18
+	OUTER_SET REPLY_DREPPIN_THRONE = 16861
+	OUTER_SET REPLY_DREPPIN_BIG = 16858
+	OUTER_SET REPLY_FULLER_THRONE = 16838
+	OUTER_SET JOURNAL_IRON_THRONE = 31456
+	
+	ACTION_IF GAME_IS ~eet~ BEGIN
+		OUTER_SET REPLY_WHERE_LEADERS_1 = 201496
+		OUTER_SET REPLY_WHERE_LEADERS_2 = 201480
+		OUTER_SET REPLY_WHERE_LEADERS_3 = 201485
+		OUTER_SET REPLY_THALDO_FIRST = 201482
+		OUTER_SET REPLY_THALDO_GO = 201483
+		OUTER_SET REPLY_THALDO_SORRY = 201484
+		OUTER_SET REPLY_BART6_SEMBIA = 207648
+		OUTER_SET REPLY_IRONM4_SEMBI = 207675
+		OUTER_SET REPLY_SCAR_YES = 200018
+		OUTER_SET REPLY_DREPPIN_THRONE = 216861
+		OUTER_SET REPLY_DREPPIN_BIG = 216858
+		OUTER_SET REPLY_FULLER_THRONE = 216838
+		OUTER_SET JOURNAL_IRON_THRONE = 231456
+	END
+	
+	// Replacement and new quest journal entries
+	ADD_JOURNAL @3000 @3001 @3002 @3003 @3004 @3010 @3011 @3100 USING ~%tra_loc%/%s/framed.tra~
+	
+	// Compile dialogue changes
+	COMPILE EVALUATE_BUFFER ~%mod_root%/dialogues/framed.d~ USING ~%tra_loc%/%s/framed.tra~
+END

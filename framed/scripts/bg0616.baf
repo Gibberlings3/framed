@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////
+// Changes to the Iron Throne 1st floor for Chapter 6 //
+////////////////////////////////////////////////////////
+
+IF
+	Global("EnteredIronThrone","GLOBAL",0)
+	Global("Teth","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("EnteredIronThrone","GLOBAL",1)
+		StartMovie("IRONTHRN")
+END
+
+IF
+	Global("EnteredIronThrone","GLOBAL",0)
+	GlobalGT("Teth","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("EnteredIronThrone","GLOBAL",1)
+		StartMovie("IRONTHRN")
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		TriggerActivation("Door0611",FALSE)
+		TriggerActivation("Door1200",FALSE)
+		StartCutScene("#LF_Ch6")
+END
+
+IF
+	Global("#LF_Accused","GLOBAL",0)
+	Global("THRONE","GLOBAL",1)
+	Global("Chapter","GLOBAL",6)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_Accused","GLOBAL",1)
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		TriggerActivation("Door0612",FALSE)
+		TriggerActivation("Door0611",TRUE)
+		TriggerActivation("Door1200",TRUE)
+		CreateCreature("CYTHAN",[755.640],N)
+		CreateCreature("FFHUNT",[770.670],N)
+		CreateCreature("FFHUNT1",[850.650],N)
+		CreateCreature("FFHUNT2",[680.700],N)
+		ActionOverride("Cythan",ChangeAIScript("",CLASS))
+		FadeFromColor([20.0],0)
+		EndCutSceneMode()
+		Wait(1)
+		ActionOverride("Cythan",StartDialogueNoSet("Cythan"))
+END
