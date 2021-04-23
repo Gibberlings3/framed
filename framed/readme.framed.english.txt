@@ -45,7 +45,7 @@ Linux
 Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from https://github.com/WeiDUorg/weidu/releases and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal and cd to your EET installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already run it once in the same directory. If you're unsure, running tolower and choosing both options is the safest bet.
 Run WeInstall framed in your game folder to install the mod. Then run wine BGMain.exe and start playing. 
 
-If you have installation problems or encounter any bugs, please post your bug report in the forum thread: https://www.gibberlings3.net/forums/topic/?????/.
+If you have installation problems or encounter any bugs, please post your bug report in the forum thread: https://www.gibberlings3.net/forums/topic/32638-framed-alternate-chapter-6-for-bgee-and-eet
 
 ------------------------------------------------------------------------
 CREDITS
@@ -56,7 +56,6 @@ CREDITS
 * Grammarsalad, subtledoctor, grodrigues, Mike1072, and jastey: for the ideas, guidance and help on the tool that provides proper and upper case player1 pronouns (cases.tpa)
 * Bubb and CamDawg - LOVE YOU FOREVER!!!  I mean it.  Forevah!
 * jastey: for everything you've done and continue to do. :)
-* lynx and argent77 for help with how to use (or not use) Nearest(...) AND SecondNearest(...) 
 * The folks at The Gibberlings Three forums: for never failing to answer my many many questions
 
 ------------------------------------------------------------------------
@@ -74,7 +73,10 @@ The Gibberlings Three	http://gibberlings3.net
 ------------------------------------------------------------------------
 HISTORY
 ------------------------------------------------------------------------
-still in development
+v1.0 - initial releases
+v1.1 - brought CRE DV changes up to standard
+v1.1.1 - just corrects comments and the forum and download links inside the ini file. No code changes.
+v1.1.2 - updated this readme
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
