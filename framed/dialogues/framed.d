@@ -254,17 +254,17 @@ END
 APPEND KEEPER
 	IF WEIGHT #-3 ~PartyHasItem("#LF_CKWO") Global("Chapter","GLOBAL",5)~ BEGIN WELCOME_BACK_1
 		SAY @2103 // ~Welcome back, <CHARNAME>.  Tethoril told me to expect you.  ...
-		IF ~~ DO ~TakePartyItem("#LF_CKWO") SetGlobal("bd_allow_rest","MYAREA",1) SetGlobal("#LF_AllowCKEntry","GLOBAL",1) SetGlobal("#LF_KPInKeep","MYAREA",1) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4174.2521]) ActionOverride(Player2,JumpToPoint([4174.2521])) ActionOverride(Player3,JumpToPoint([4174.2521])) ActionOverride(Player4,JumpToPoint([4174.2521])) ActionOverride(Player5,JumpToPoint([4174.2521])) ActionOverride(Player6,JumpToPoint([4174.2521])) JumpToPoint([4280.2398]) MoveViewPoint([4174.2521],INSTANT) MultiPlayerSync() EndCutSceneMode()~ UNSOLVED_JOURNAL @3002 EXIT
+		IF ~~ DO ~TakePartyItem("#LF_CKWO") SetGlobal("bd_allow_rest","MYAREA",1) SetGlobal("#LF_AllowCKEntry","GLOBAL",1) SetGlobal("#LF_KPInKeep","MYAREA",1) SetGlobal("#LF_PCInKeep","GLOBAL",1) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4174.2521]) ActionOverride(Player2,JumpToPoint([4174.2521])) ActionOverride(Player3,JumpToPoint([4174.2521])) ActionOverride(Player4,JumpToPoint([4174.2521])) ActionOverride(Player5,JumpToPoint([4174.2521])) ActionOverride(Player6,JumpToPoint([4174.2521])) JumpToPoint([4280.2398]) MoveViewPoint([4174.2521],INSTANT) MultiPlayerSync() EndCutSceneMode()~ UNSOLVED_JOURNAL @3002 EXIT
 	END
 
 	IF WEIGHT #-2 ~Global("#LF_AllowCKEntry","GLOBAL",1) Global("#LF_KPInKeep","MYAREA",0)~ BEGIN WELCOME_BACK_2
 		SAY @2126 // ~Welcome back, <CHARNAME>.  Go right in.~
-		IF ~~ DO ~SetGlobal("bd_allow_rest","MYAREA",1) SetGlobal("#LF_KPInKeep","MYAREA",1) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4174.2521]) ActionOverride(Player2,JumpToPoint([4174.2521])) ActionOverride(Player3,JumpToPoint([4174.2521])) ActionOverride(Player4,JumpToPoint([4174.2521])) ActionOverride(Player5,JumpToPoint([4174.2521])) ActionOverride(Player6,JumpToPoint([4174.2521])) JumpToPoint([4280.2398]) MoveViewPoint([4174.2521],INSTANT) MultiPlayerSync() EndCutSceneMode()~ EXIT
+		IF ~~ DO ~SetGlobal("bd_allow_rest","MYAREA",1) SetGlobal("#LF_KPInKeep","MYAREA",1) SetGlobal("#LF_PCInKeep","GLOBAL",1) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4174.2521]) ActionOverride(Player2,JumpToPoint([4174.2521])) ActionOverride(Player3,JumpToPoint([4174.2521])) ActionOverride(Player4,JumpToPoint([4174.2521])) ActionOverride(Player5,JumpToPoint([4174.2521])) ActionOverride(Player6,JumpToPoint([4174.2521])) JumpToPoint([4280.2398]) MoveViewPoint([4174.2521],INSTANT) MultiPlayerSync() EndCutSceneMode()~ EXIT
 	END
 
 	IF WEIGHT #-1 ~Global("#LF_AllowCKEntry","GLOBAL",1) Global("#LF_KPInKeep","MYAREA",1)~ BEGIN SEE_YA
 		SAY @2127 // ~Come back soon, <CHARNAME>.~
-		IF ~~ DO ~SetGlobal("#LF_KPInKeep","MYAREA",0) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4697.2849]) ActionOverride(Player2,JumpToPoint([4648.2827])) ActionOverride(Player3,JumpToPoint([4713.2802])) ActionOverride(Player4,JumpToPoint([4599.2802])) ActionOverride(Player5,JumpToPoint([4660.2777])) ActionOverride(Player6,JumpToPoint([4713.2750])) JumpToPoint([4522.2650]) MoveViewPoint([4697.2849],INSTANT) MultiPlayerSync() EndCutSceneMode()~ EXIT
+		IF ~~ DO ~SetGlobal("#LF_KPInKeep","MYAREA",0) SetGlobal("#LF_PCInKeep","GLOBAL",0) ClearAllActions() StartCutSceneMode() ActionOverride(Player1,JumpToPoint([4697.2849]) ActionOverride(Player2,JumpToPoint([4648.2827])) ActionOverride(Player3,JumpToPoint([4713.2802])) ActionOverride(Player4,JumpToPoint([4599.2802])) ActionOverride(Player5,JumpToPoint([4660.2777])) ActionOverride(Player6,JumpToPoint([4713.2750])) JumpToPoint([4522.2650]) MoveViewPoint([4697.2849],INSTANT) MultiPlayerSync() EndCutSceneMode()~ EXIT
 	END
 END
 
@@ -370,7 +370,7 @@ APPEND TETHTO2
 	
 	IF ~~ BEGIN GOOD_LUCK
 		SAY @2125 // ~Good luck, <CHARNAME>, though I doubt you'll need it.~
-		IF ~~ DO ~SetGlobal("Teth","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("cuttetht")~ UNSOLVED_JOURNAL @3003 EXIT
+		IF ~~ DO ~SetGlobal("Teth","GLOBAL",1) SetGlobal("#LF_PCInKeep","GLOBAL",0) ClearAllActions() StartCutSceneMode() StartCutScene("cuttetht")~ UNSOLVED_JOURNAL @3003 EXIT
 	END
 	
 	IF ~Global("Chapter","GLOBAL",5) Global("Teth","GLOBAL",2)~ BEGIN WRAP_1
@@ -456,7 +456,7 @@ APPEND IF_FILE_EXISTS TICAM
 	
 	IF ~~ BEGIN END_IT_5
 		SAY @2112 // ~Farewell, <CHARNAME>. And again, thank you.~
-		IF ~~ DO ~GiveItemCreate("TITOME14",[PC],1,0,0) ActionOverride("TITamah",EscapeArea()) EscapeArea()~ SOLVED_JOURNAL @3100 EXIT
+		IF ~~ DO ~GiveItemCreate("TITOME14",[PC],1,0,0) EraseJournalEntry(@3200)EraseJournalEntry(@3201) EraseJournalEntry(@3202) EraseJournalEntry(@3203) EraseJournalEntry(@3204) EraseJournalEntry(@3205) EraseJournalEntry(@3206) EraseJournalEntry(@3207) ActionOverride("TITamah",EscapeArea()) EscapeArea()~ SOLVED_JOURNAL @3100 EXIT
 	END
 END
 

@@ -19,3 +19,22 @@ THEN
 		TriggerActivation("Info2618",True)
 		SetGlobal("#L_FInfo2618_Deactivated","MYAREA",0)
 END
+
+IF
+	Global("#LF_KPInKeep","MYAREA",1)
+	Global("#LF_PCInKeep","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_KPInKeep","MYAREA",0)
+		ActionOverride("Keeper",JumpToPoint([4522.2650]))
+END
+
+IF
+	Global("#LF_KPInKeep","MYAREA",0)
+	Global("#LF_PCInKeep","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_KPInKeep","MYAREA",1)
+		ActionOverride("Keeper",JumpToPoint([4280.2398]))
+END
+
