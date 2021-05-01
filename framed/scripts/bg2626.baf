@@ -3,6 +3,15 @@
 ///////////////////////////////////////////////
 
 IF
+	OnCreation()
+	Global("#LF_PCInKeep","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_KPInKeep","MYAREA",1)
+		ActionOverride("Keeper",JumpToPoint([4280.2398]))	
+END
+
+IF
 	!Global("Chapter","GLOBAL",6)
 	Global("#L_FInfo2618_Deactivated","MYAREA",0)
 THEN
