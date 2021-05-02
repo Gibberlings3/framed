@@ -78,6 +78,7 @@ v1.1 - brought CRE DV changes up to standard
 v1.1.1 - just corrects comments and the forum and download links inside the ini file. No code changes.
 v1.1.2 - updated this readme
 v1.2 - corrections to the Keeper of the Portal's and Arkansis placement as well as a journal correction with cross-mod content (Camryn and Tamah)
+v1.3 - moved Tamoko to outside of Iron Throne bldg for alternate ch6, FF can no longer follow out of IT HQ, fixed Eltan dialogue leading to altCh6, matched journal entries to existing ones, new chapter starts now make appropriate save games
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION

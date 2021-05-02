@@ -4,7 +4,7 @@
 
 IF
 	Global("EnteredIronThrone","GLOBAL",0)
-	Global("Teth","GLOBAL",0)
+	GlobalLT("Teth","GLOBAL",2)
 THEN
 	RESPONSE #100
 		SetGlobal("EnteredIronThrone","GLOBAL",1)
@@ -13,7 +13,7 @@ END
 
 IF
 	Global("EnteredIronThrone","GLOBAL",0)
-	GlobalGT("Teth","GLOBAL",0)
+	GlobalGT("Teth","GLOBAL",1)
 THEN
 	RESPONSE #100
 		SetGlobal("EnteredIronThrone","GLOBAL",1)
@@ -32,6 +32,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#LF_Accused","GLOBAL",1)
+		SaveGame(17)
 		StartCutSceneMode()
 		FadeToColor([20.0],0)
 		TriggerActivation("Door0612",FALSE)
