@@ -61,12 +61,12 @@ REPLACE_SAY CYTHAN 0 @2029
 APPEND CYTHAN
 	IF WEIGHT #-2 ~Global("#LF_Accused","GLOBAL",1) NumInParty(1)~ BEGIN ACCUSE_YOU_1
 		SAY @2202 // ~There <PRO_HESHE> is! <PROPER_HESHE> is the one that killed Rieltar and Brunos!~
-		IF ~~ DO ~SetGlobal("#LF_Accused","GLOBAL",2) IncrementChapter("#LF_CH7") AddJournalEntry(@3012,INFO) EscapeArea()~ EXIT
+		IF ~~ DO ~SetGlobal("#LF_Accused","GLOBAL",2) StartCutSceneMode() StartCutScene("#LF_Ch7")~ EXIT
 	END
 	
 	IF WEIGHT #-2 ~Global("#LF_Accused","GLOBAL",1) !NumInParty(1)~ BEGIN ACCUSE_YOU_1
 		SAY @2201 // ~There they are!  Those are the ones that killed Rieltar and Brunos!~
-		IF ~~ DO ~SetGlobal("#LF_Accused","GLOBAL",2) IncrementChapter("#LF_CH7") AddJournalEntry(@3012,INFO) EscapeArea()~ EXIT
+		IF ~~ DO ~SetGlobal("#LF_Accused","GLOBAL",2) StartCutSceneMode() StartCutScene("#LF_Ch7")~ EXIT
 	END
 END
 
@@ -337,6 +337,8 @@ ALTER_TRANS SORREL
 	BEGIN 0 END
 	BEGIN 0 END
 	BEGIN ~REPLY~ ~@2020~ END
+	
+ADD_TRANS_ACTION TAMOKO BEGIN 0 END BEGIN 0 1 2 END ~SetGlobal("#LF_MoveFFITHQ","GLOBAL",1)~ 
 
 ADD_STATE_TRIGGER TETHTO2 0 ~Global("Chapter","GLOBAL",6)~
 APPEND TETHTO2

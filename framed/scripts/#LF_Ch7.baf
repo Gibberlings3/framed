@@ -1,0 +1,17 @@
+//////////////////////////////////
+// Start of Alternate Chapter 6 //
+//////////////////////////////////
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		IncrementChapter("#LF_CH7") 
+		SetGlobal("#LF_MoveFFITHQ","GLOBAL",2)
+		AddJournalEntry(@3012,INFO)
+		ActionOverride("Cythan",EscapeArea())
+		Wait(2)
+		SaveGame(17)
+		EndCutSceneMode()
+END

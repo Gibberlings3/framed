@@ -32,11 +32,9 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#LF_Accused","GLOBAL",1)
-		SaveGame(17)
 		StartCutSceneMode()
 		FadeToColor([20.0],0)
 		TriggerActivation("Door0612",FALSE)
-		TriggerActivation("Door0611",TRUE)
 		TriggerActivation("Door1200",TRUE)
 		CreateCreature("CYTHAN",[755.640],N)
 		CreateCreature("FFHUNT",[770.670],N)
@@ -48,3 +46,21 @@ THEN
 		Wait(1)
 		ActionOverride("Cythan",StartDialogueNoSet("Cythan"))
 END
+
+IF
+	OnCreation()
+	Global("#LF_MoveFFITHQ","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_MoveFFITHQ","GLOBAL",0)
+		ActionOverride("FFHUNT",DestroySelf())
+		ActionOverride("FFHUNT1",DestroySelf())
+		ActionOverride("FFHUNT2",DestroySelf())
+		TriggerActivation("Door0612",TRUE)
+		TriggerActivation("Door0611",TRUE)
+		CreateCreature("PANGWA",[676.432],S)  // Pang Wallen
+		SetGlobal("PangwaSpawn","GLOBAL",1)
+		CreateCreature("DHANIA",[986.771],S)  // Dhanial
+		SetGlobal("DhaniaSpawn","GLOBAL",1)
+END
+		

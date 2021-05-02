@@ -22,10 +22,10 @@ THEN
 
 		SetGlobal("#LF_AltCh6","GLOBAL",1)
 		IncrementChapter("#LF_CH6")
-		SaveGame(16)
 
 		FadeFromColor([20.0],0)
 		SmallWait(2)
 		AddJournalEntry(@3010,INFO)
+		SaveGame(16)
 		EndCutSceneMode()
 END
