@@ -20,6 +20,7 @@ THEN
 		SmallWait(2)
 		MultiPlayerSync()
 
+		SetGlobal("#LF_AltCh6","GLOBAL",1)
 		IncrementChapter("#LF_CH6")
 
 		FadeFromColor([20.0],0)
