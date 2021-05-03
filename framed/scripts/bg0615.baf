@@ -23,6 +23,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("LettersFound","MYAREA",1)
-		EraseJournalEntry(%JOURNAL_IRON_THRONE3%)  // Eltan's Orders Duke Eltan of Baldur's Gate has ordered us to investigate the Iron Throne. A good start would be their headquarters in the southern quadrant of the city.
-		AddJournalEntry(@3011,QUEST)
+		EraseJournalEntry(%JOURNAL_IRON_THRONE3%)
+		SetQuestDone(%JOURNAL_IRON_THRONE4%) 
+		AddJournalEntry(@3011,QUEST_DONE)
 END

@@ -289,6 +289,11 @@ APPEND PARDA
 	END
 END
 
+ADD_TRANS_TRIGGER PIATO 1 ~Global("Chapter","GLOBAL",6)~ 2 3 DO 0
+EXTEND_BOTTOM PIATO 1 2 3
+	IF ~Global("Chapter","GLOBAL",5)~ DO ~MoveToPoint([635.1106])~ EXIT
+END
+
 ADD_STATE_TRIGGER POGHM10 2 ~Global("Chapter","GLOBAL",6)~ 3 4
 APPEND POGHM10
 	IF ~Global("Chapter","GLOBAL",5) OR(3) RandomNum(7,3) RandomNum(7,4) RandomNum(7,5)~ BEGIN WELCOME_BACK

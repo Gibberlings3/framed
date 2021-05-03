@@ -65,6 +65,7 @@ The Framed mod was created using the resources provided by the IESDP (https://gi
 
 * Near Infinity			https://github.com/Argent77/NearInfinity/releases/latest
 * WeiDU					http://www.weidu.org
+* Audacity				https://www.audacityteam.org
 
 Modding communities, tutorials and technical assistance:
 
@@ -79,6 +80,8 @@ v1.1.1 - just corrects comments and the forum and download links inside the ini 
 v1.1.2 - updated this readme
 v1.2 - corrections to the Keeper of the Portal's and Arkansis placement as well as a journal correction with cross-mod content (Camryn and Tamah)
 v1.3 - moved Tamoko to outside of Iron Throne bldg for alternate ch6, FF can no longer follow out of IT HQ, fixed Eltan dialogue leading to altCh6, matched journal entries to existing ones, new chapter starts now make appropriate save games
+v1.4 - improved chapter saves so reloads are smoother
+v1.5 - updated this readme to include credit to Audacity for making the sound files, skipped the quest entry for going to Gorion's room, closed out the Investigating the Iron Throne quest in the journal when documents found
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
