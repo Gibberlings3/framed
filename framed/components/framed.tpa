@@ -302,6 +302,12 @@ BEGIN
 	ACTION_IF FILE_EXISTS_IN_GAME ~TICam.cre~ BEGIN
 		EXTEND_TOP ~%Candlekeep_Library_L1%.bcs~  ~%mod_root%/scripts/bg2608.baf~
 	END
+	// IF BG1RE is loaded - need to keep Sister Sapientia from acting like a doppleganger
+	OUTER_SPRINT STATE_TRIGGER_FIX_T1SAPI ~~
+	ACTION_IF FILE_EXISTS_IN_GAME ~T1SAPI.cre~ BEGIN
+		OUTER_SPRINT STATE_TRIGGER_FIX_T1SAPI ~~~~~ADD_TRANS_TRIGGER T1SAPI 2 ~Global("Chapter","GLOBAL",6)~ DO 0
+		REPLACE_TRANS_TRIGGER T1SAPI BEGIN 2 END BEGIN 1 END ~RandomNum(8,2)~ ~OR(2) RandomNum(8,2) !Global("Chapter","GLOBAL",6)~ ~~~~~
+	END
 	// If Grey is installed before need to wipe out his extra talk
 	// If Grey is installed properly (after this mod) it should work ok
 	OUTER_SPRINT FIX_GREY ~~ 
