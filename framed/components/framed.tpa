@@ -51,15 +51,6 @@ BEGIN
 	COPY_EXISTING ~PHLYDI3.CRE~ ~override~
 		WRITE_ASCII 0x280 ~PHLYDI3~ #32 // set DV
 		
-	// Don't let the flaming fist follow the group out of the door
-	COPY_EXISTING ~%BaldursGateDocks_IronThrone_L1%.are~ ~override~
-		LPF ALTER_AREA_REGION
-			INT_VAR
-				flag_impassable_npc = 1
-			STR_VAR
-				region_name = ~Door1200~
-		END
-	
 	// Add web trap to the catacombs
 	COPY_EXISTING ~%Candlekeep_Catacombs_L1%.are~ ~override~
 		LPF ADD_AREA_REGION_TRIGGER
@@ -247,7 +238,6 @@ BEGIN
 	EXTEND_TOP ~%CandlekeepCaves%.bcs~ ~%mod_root%/scripts/bg5506.baf~
 	EXTEND_TOP ~Prat.bcs~ ~%mod_root%/scripts/prat.baf~
 	EXTEND_TOP ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~%mod_root%/scripts/bg0615.baf~ USING ~%tra_loc%/%s/framed.tra~
-	EXTEND_TOP ~%BaldursGateDocks%.bcs~ ~%mod_root%/scripts/bg1200.baf~
 	LAF REPLACE_SCRIPT_BLOCK
 		INT_VAR
 			only_once = 1
