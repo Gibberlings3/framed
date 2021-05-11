@@ -238,6 +238,8 @@ BEGIN
 	EXTEND_TOP ~%CandlekeepCaves%.bcs~ ~%mod_root%/scripts/bg5506.baf~
 	EXTEND_TOP ~Prat.bcs~ ~%mod_root%/scripts/prat.baf~
 	EXTEND_TOP ~%BaldursGateDocks_IronThrone_L5%.bcs~ ~%mod_root%/scripts/bg0615.baf~ USING ~%tra_loc%/%s/framed.tra~
+	EXTEND_TOP ~%BaldursGateDocks%.bcs~ ~%mod_root%/scripts/reset_it_hq.baf~
+	EXTEND_TOP ~%BaldursGateDocks_IronThrone_Cellar%.bcs~ ~%mod_root%/scripts/reset_it_hq.baf~
 	LAF REPLACE_SCRIPT_BLOCK
 		INT_VAR
 			only_once = 1
@@ -325,7 +327,8 @@ BEGIN
 			ADD_TRANS_TRIGGER %GARRICK_JOINED% %STATE_MUST_WAIT% ~Global("Chapter","GLOBAL",6)~ DO 2
 			EXTEND_BOTTOM %GARRICK_JOINED% %STATE_MUST_WAIT%
 				IF ~Global("Chapter","GLOBAL",5)~ THEN REPLY @2032 /* ~That'll have to wait, Garrick, we've got spiders to kill first.~ */ DO ~SetGlobal("X#GAFW2608","GLOBAL",2)~ EXIT
-			END~~~~~
+			END
+			ADD_TRANS_TRIGGER TAMOKO 3 ~Global("#LF_AltCh6","GLOBAL",0)~ DO 2~~~~~
 		END
 	END
 	

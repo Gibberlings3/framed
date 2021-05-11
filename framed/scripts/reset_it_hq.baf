@@ -1,0 +1,14 @@
+///////////////////////////////////////////////////////
+// The FF leave an hour after the PC flees the IT HQ //
+///////////////////////////////////////////////////////
+
+IF
+	Global("#LF_AltCh6","GLOBAL",1)
+	Global("Chapter","GLOBAL",7)
+	Global("#LF_SetFFMove","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_SetFFMove","GLOBAL",1)
+		SetGlobal("#LF_MoveFFITHQ","GLOBAL",1)
+		SetGlobalTimer("#LF_MoveFFTimer","GLOBAL",ONE_HOUR)
+END
