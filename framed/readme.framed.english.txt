@@ -82,6 +82,7 @@ v1.2 - corrections to the Keeper of the Portal's and Arkansis placement as well 
 v1.3 - moved Tamoko to outside of Iron Throne bldg for alternate ch6, FF can no longer follow out of IT HQ, fixed Eltan dialogue leading to altCh6, matched journal entries to existing ones, new chapter starts now make appropriate save games
 v1.4 - improved chapter saves so reloads are smoother
 v1.5 - updated this readme to include credit to Audacity for making the sound files, skipped the quest entry for going to Gorion's room, closed out the Investigating the Iron Throne quest in the journal when documents found, removed Tamoko changes, allowed FF to once again follow out of IT HQ, put in alternate diaries properly (leaving in original if normal ch 6 is done), smoothed out chapter transitions
+v1.5.1 - updated this readme
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
