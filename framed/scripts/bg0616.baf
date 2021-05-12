@@ -31,7 +31,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("#LF_Accused","GLOBAL",1)
 		StartCutSceneMode()
-		FadeToColor([20.0],0)
+		FadeToColor([0.0],0)
 		CreateCreature("CYTHAN",[755.640],N)
 		CreateCreature("FFHUNT",[770.670],N)
 		CreateCreature("FFHUNT1",[850.650],N)
