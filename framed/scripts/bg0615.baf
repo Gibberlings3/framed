@@ -27,3 +27,15 @@ THEN
 		SetQuestDone(%JOURNAL_IRON_THRONE4%) 
 		AddJournalEntry(@3011,QUEST_DONE)
 END
+
+IF
+	Exists("Cythan")
+	Global("Chapter","GLOBAL",7)
+	Global("#LF_AltCh6","GLOBAL",1)
+	Global("#L_DiarySet","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_DiarySet","MYAREA",1)
+		ActionOverride("Cythan",DestroyItem("SCRL3F"))
+		GiveItemCreate("#LSCRL3F","Cythan",1,0,0)
+END

@@ -12,3 +12,15 @@ THEN
 		SetGlobal("#LF_MoveFFITHQ","GLOBAL",1)
 		SetGlobalTimer("#LF_MoveFFTimer","GLOBAL",ONE_HOUR)
 END
+
+IF
+	Global("#LF_MoveFFITHQ","GLOBAL",1)
+	Global("#LF_MoveFFSBG","MYAREA",0)
+	GlobalTimerExpired("#LF_MoveFFTimer","GLOBAL")
+THEN
+	RESPONSE #100
+		SetGlobal("#LF_MoveFFSBG","MYAREA",0)
+		ActionOverride("FFHUNT",DestroySelf())
+		ActionOverride("FFHUNT1",DestroySelf())
+		ActionOverride("FFHUNT2",DestroySelf())
+END
