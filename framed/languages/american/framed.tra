@@ -168,9 +168,12 @@
 @2147	= ~Please accept this with our thanks. You may also come and go as often as you wish. Your old room will be reserved for your sole use. We cannot thank you, enough.~
 @2148	= ~Stay and browse the library for as long as you like. This is once again your home, if you so wish.~
 @2149	= ~Greetings, young one.~
+@2151	= ~And before I forget, Gorion left this among his possesions. It is addressed to you. I wanted to make sure you've seen it.~
 
 // Gatewarden (GATEWA2)
 @2150	= ~And we will patrol the area regularly to make sure it remains sealed, forever.~
+
+// @2151 up with Tethtoril
 
 //////////////////////////////////
 // Alternate chapter 6 dialogue //

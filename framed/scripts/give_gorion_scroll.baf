@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////////////////////////
+// Sets global to indicate that Tethtoril needs to give PC Gorion's scroll   //
+// Will also remove original scroll from its container if given by Tethtoril //
+///////////////////////////////////////////////////////////////////////////////
+
+IF
+	Global("#L_TethGiveScroll","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_TethGiveScroll","GLOBAL",1)
+END
+
+IF
+	Global("#L_TethGiveScroll","GLOBAL",2)
+	Global("#L_ScrollRemoved","MYAREA",0)
+	AreaCheck("%Candlekeep_Library_L5%")
+	Contains("SCRL2J","Container 6")
+THEN
+	RESPONSE #100
+		SetGlobal("#L_ScrollRemoved","MYAREA",1)
+		ActionOverride("Container 6",DestroyItem("SCRL2J"))
+END
+
+	

@@ -19,6 +19,7 @@ There are no known compatibility issues at this time
 ------------------------------------------------------------------------
 INSTALLATION
 ------------------------------------------------------------------------
+Install after BG1NPC (https://www.gibberlings3.net/mods/npcs/bg1npc/)
 Install after BG1RE to complete Camryn/Tamah (https://www.gibberlings3.net/mods/npcs/bg-romantic-encounters/)
 Install before Grey the dog (https://www.gibberlings3.net/mods/npcs/grey-the-dog/)
 
@@ -85,6 +86,7 @@ v1.4 - improved chapter saves so reloads are smoother
 v1.5 - updated this readme to include credit to Audacity for making the sound files, skipped the quest entry for going to Gorion's room, closed out the Investigating the Iron Throne quest in the journal when documents found, removed Tamoko changes, allowed FF to once again follow out of IT HQ, put in alternate diaries properly (leaving in original if normal ch 6 is done), smoothed out chapter transitions
 v1.5.1 - updated this readme to include the changes in v1.5 in history
 v1.6 - new versions of the chapter text narrations built using Real-Time-Voice-Cloning and Audacity
+v1.7 - Tethtoril will hand the PC Gorion's scroll when they finish clearing out the catacombs when BG1NPC is installed to be more compatible with it
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION

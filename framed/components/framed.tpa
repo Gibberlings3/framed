@@ -312,6 +312,9 @@ BEGIN
 	OUTER_SET STATE_ATTITUDE = ~-1~
 	OUTER_SET STATE_MUST_WAIT = ~-1~
 	ACTION_IF MOD_IS_INSTALLED ~bg1npc.tp2~ 0 BEGIN
+		// Have Tethtoril give the PC Gorion's scroll to stay compatible with BG1NPC
+		EXTEND_BOTTOM ~BALDUR.BCS~ ~%mod_root%/scripts/give_gorion_scroll.baf~ EVAL
+		
 		OUTER_SET STATE_NO_NEED = STATE_WHICH_SAYS 25 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~
 		OUTER_SET STATE_ATTITUDE = STATE_WHICH_SAYS 29 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~
 		OUTER_SET STATE_MUST_WAIT = STATE_WHICH_SAYS 21 IN ~bg1npc\tra\%s\x#gaint.tra~ FROM ~%GARRICK_JOINED%~

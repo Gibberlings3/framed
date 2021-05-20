@@ -402,6 +402,12 @@ APPEND TETHTO2
 	IF ~~ BEGIN WRAP_END
 		SAY @2148 // ~Stay and browse the library for as long as you like. This is once again your home, if you so wish.~
 		IF ~~ DO ~SetGlobal("Teth","GLOBAL",3)~ SOLVED_JOURNAL @3004 EXIT
+		IF ~Global("#L_TethGiveScroll","GLOBAL",1) Global("X#GorionTalkingLetter","GLOBAL",0)~ DO ~SetGlobal("Teth","GLOBAL",3)~ SOLVED_JOURNAL @3004 GOTO GIVE_SCROLL
+	END
+	
+	IF ~~ BEGIN GIVE_SCROLL
+		SAY @2151 // ~And before I forget, Gorion left this among his possesions. It is addressed to you. I wanted to make sure you've seen it.~
+		IF ~~ DO ~SetGlobal("#L_TethGiveScroll","GLOBAL",2) GiveItemCreate("scrl2J",Player1,0,0,0)~ EXIT
 	END
 	
 	IF ~Global("Chapter","GLOBAL",5) Global("Teth","GLOBAL",3)~ BEGIN GREETINGS
