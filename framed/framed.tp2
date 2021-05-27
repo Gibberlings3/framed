@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/framed~
 SUPPORT ~~
-VERSION ~v1.7~
+VERSION ~v1.8~
 
 README ~framed/readme.framed.%LANGUAGE%.txt~ ~framed/readme.framed.english.txt~
 
