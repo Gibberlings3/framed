@@ -89,6 +89,7 @@ v1.6 - new versions of the chapter text narrations built using Real-Time-Voice-C
 v1.7 - Tethtoril will hand the PC Gorion's scroll when they finish clearing out the catacombs when BG1NPC is installed to be more compatible with it
 v1.8 - added cross mod compatibility with Transitions and Sarevok's diary for Cythandria's clean-up quest
 v1.8.1 - added LableType in ini for installing with Project Infinity (https://forums.beamdog.com/discussion/74335/project-infinity-mod-manager-for-baldurs-gate-icewind-dale-planescape-torment-and-eet)
+v1.9 - added check for Gatewarden in quest wrap dialogue with Tethtoril
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
