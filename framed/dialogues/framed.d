@@ -386,8 +386,8 @@ APPEND TETHTO2
 	
 	IF ~~ BEGIN WRAP_2
 		SAY @2145 // ~We will reseal the entrance into the caverns beneath the keep. Someone must have discovered how to remove the wards.~
-		IF ~Exists("GATEWA2") !Dead("GATEWA2")~ EXTERN GATEWA2 PATROL
-		IF ~OR(2) !Exists("GATEWA2") Dead("GATEWA2")~ GOTO WRAP_3
+		IF ~~ GOTO WRAP_3
+		IF ~TriggerOverride(Player1,InMyArea("GATEWA2")) IsActive("GATEWA2") !Dead("GATEWA2")~ EXTERN GATEWA2 PATROL
 	END
 	
 	IF ~~ BEGIN WRAP_3
