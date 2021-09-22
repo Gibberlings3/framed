@@ -91,6 +91,7 @@ v1.8 - added cross mod compatibility with Transitions and Sarevok's diary for Cy
 v1.8.1 - added LableType in ini for installing with Project Infinity (https://forums.beamdog.com/discussion/74335/project-infinity-mod-manager-for-baldurs-gate-icewind-dale-planescape-torment-and-eet)
 v1.9 - added check for Gatewarden in quest wrap dialogue with Tethtoril
 v1.9.1 - updated ini file to point at new download location
+v1.9.2 - fixed incompatibility with Unfinished Business mod and placed Scar's giving of work order at the end of his dialogue at the bridge
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
