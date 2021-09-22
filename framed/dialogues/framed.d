@@ -329,14 +329,12 @@ ADD_STATE_TRIGGER READ3 2 ~Global("Chapter","GLOBAL",6)~
 
 REPLACE_SAY RFRIEN 1 @2026
 
-ADD_TRANS_TRIGGER SCAR 0 ~!Global("#L_FWorkOrder","GLOBAL",0)~ DO 1
-EXTEND_BOTTOM SCAR 0
-	IF ~Global("#L_FWorkOrder","GLOBAL",0)~ THEN REPLY #%REPLY_SCAR_YES% GOTO GIVE_WORK_ORDER
-END
+ADD_TRANS_ACTION SCAR BEGIN 0 END BEGIN 1 END ~SetGlobal("#L_FGiveWO","MYAREA",1)~
+REPLACE_TRANS_ACTION SCAR BEGIN 3 7 END BEGIN 0 END ~EscapeArea()~ ~~
 APPEND SCAR
-	IF ~~ BEGIN GIVE_WORK_ORDER
+	IF WEIGHT #0 ~Global("#L_FGiveWO","MYAREA",1) Global("#L_FWorkOrder","GLOBAL",0)~ BEGIN GIVE_WORK_ORDER
 		SAY @2102 // ~Folks from Candlekeep sent a messenger here looking for those that cleared out the Nashkel mines.  They wanted me to give this to you if I saw you.~
-		IF ~~ DO ~SetGlobal("#L_FWorkOrder","GLOBAL",1) GiveItemCreate("#LF_CKWO",LastTalkedToBy(Myself),1,0,0)~ UNSOLVED_JOURNAL @3001 GOTO 2
+		IF ~~ DO ~SetGlobal("#L_FGiveWO","MYAREA",0) SetGlobal("#L_FWorkOrder","GLOBAL",1) GiveItemCreate("#LF_CKWO",LastTalkedToBy(Myself),1,0,0) EscapeArea()~ UNSOLVED_JOURNAL @3001 EXIT
 	END
 END	
 

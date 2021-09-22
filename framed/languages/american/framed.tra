@@ -88,7 +88,7 @@
 @2101	= ~Excuse me, <SIRMAAM>. Folks from Candlekeep were here looking for <CHARNAME>.  They wanted me to give this to <PRO_HIMHER> if I saw <PRO_HIMHER>.~
 
 // Scar
-@2102	= ~Folks from Candlekeep sent a messenger here looking for those that cleared out the Nashkel mines.  They wanted me to give this to you if I saw you.~
+@2102	= ~Oh, by the way, folks from Candlekeep sent a messenger here looking for those that cleared out the Nashkel mines.  They wanted me to give this to you if I saw you.~
 
 // Keeper of the Portal (KEEPER)
 @2103	= ~Welcome back, <CHARNAME>.  Tethoril told me to expect you.  He said you should feel free to visit your friends, rest and resupply.  Then when you were ready to start clearing the catacombs, look for him on the top floor of the library.~

@@ -232,6 +232,7 @@ BEGIN
 	COMPILE EVALUATE_BUFFER ~%mod_root%/scripts/#LF_Web1.baf~
 	COMPILE EVALUATE_BUFFER ~%mod_root%/scripts/#LF_Ch6.baf~ USING ~%tra_loc%/%s/framed.tra~
 	COMPILE EVALUATE_BUFFER ~%mod_root%/scripts/#LF_Ch7.baf~ USING ~%tra_loc%/%s/framed.tra~
+	EXTEND_TOP ~SCAR.BCS~ ~%mod_root%/scripts/scar.baf~
 	EXTEND_TOP ~%Candlekeep_Ch6%.bcs~ ~%mod_root%/scripts/bg2626.baf~
 	EXTEND_TOP ~%Candlekeep_Library_L2%.bcs~ ~%mod_root%/scripts/bg2609.baf~
 	EXTEND_TOP ~%Candlekeep_Library_L4%.bcs~ ~%mod_root%/scripts/bg2611.baf~

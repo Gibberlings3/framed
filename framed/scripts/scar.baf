@@ -1,0 +1,21 @@
+//////////////////////////////////
+// Finished the bridge dialogue // 
+//////////////////////////////////
+
+IF
+	Global("#L_FGiveWO","MYAREA",1)
+	Global("#L_FWorkOrder","GLOBAL",0)
+THEN
+	RESPONSE #100		
+		Dialog(LastTalkedToBy(Myself))
+END
+
+IF
+	Global("#L_FGiveWO","MYAREA",1)
+	GlobalGT("#L_FWorkOrder","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#L_FGiveWO","MYAREA",0)
+		EscapeArea()
+END
+
