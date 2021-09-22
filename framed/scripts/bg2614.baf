@@ -11,7 +11,6 @@ THEN
 		StartCutSceneMode()
 		SmallWait(1)
 		SetGlobal("#L_ArkSet","MYAREA",1)
-		SetGlobal("UBNoWardenLvl6","GLOBAL",2)
 		CreateCreatureObject("ARKANI3","GATEWA2",0,0,0)
 		SmallWait(1)
 		ActionOverride("ARKANIS",ChangeAIScript("",CLASS))
@@ -30,6 +29,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("#L_FCleared","MYAREA",1)
+		SetGlobal("UBNoWardenLvl6","GLOBAL",2)
 		ActionOverride("GATEWA2",ChangeAIScript("",CLASS))
 END
 
