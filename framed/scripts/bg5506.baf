@@ -11,5 +11,7 @@ THEN
 	RESPONSE #100
 		SetGlobal("#L_FCleared","MYAREA",1)
 		CreateCreatureObject("Shista","Prat",0,0,0)
+		Wait(1)
+		ActionOverride("SHISTAL",SetDialogue(""))
 END
 
