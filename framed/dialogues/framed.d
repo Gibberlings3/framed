@@ -304,9 +304,9 @@ APPEND POGHM10
 	END
 END
 
-ADD_STATE_TRIGGER PRAT 0 ~Global("Chapter","GLOBAL",6)~ 1
+ADD_STATE_TRIGGER PRAT 0 ~Global("Chapter","GLOBAL",6)~ 1 4
 APPEND Prat
-	IF ~Global("Chapter","GLOBAL",5)~ BEGIN WHOAREYOU
+	IF ~Global("Chapter","GLOBAL",5) NumTimesTalkedTo(0)~ BEGIN WHOAREYOU
 		SAY @2137 // ~Who are you?  How'd you get past our...who are you?!~
 		IF ~~ THEN REPLY @2138 /* ~I could ask you about the same question!  Who are you and what are you doing here?~ */ GOTO TROUBLE
 	END
