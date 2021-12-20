@@ -55,6 +55,7 @@ CREDITS
 * K4thos: for EET - even though it's not required for this mod, I just really like EET
 * DavidW: for the lovely macros included in alter_script.tpa as well as guidance on encapsulation and immutability
 * Grammarsalad, subtledoctor, grodrigues, Mike1072, and jastey: for the ideas, guidance and help on the tool that provides proper and upper case player1 pronouns (cases.tpa)
+* JohnBob for the French translation
 * Bubb and CamDawg - LOVE YOU FOREVER!!!  I mean it.  Forevah!
 * jastey: for everything you've done and continue to do. :)
 * The folks at The Gibberlings Three forums: for never failing to answer my many many questions
@@ -93,6 +94,7 @@ v1.9 - added check for Gatewarden in quest wrap dialogue with Tethtoril
 v1.9.1 - updated ini file to point at new download location
 v1.10 - fixed incompatibility with Unfinished Business mod and placed Scar's giving of work order at the end of his dialogue at the bridge
 v1.11 - tightened up the dialogues in the underground caverns 
+v1.12 - French translation by JohnBob
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION

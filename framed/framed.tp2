@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/framed~
-SUPPORT ~~
-VERSION ~v1.11~
+SUPPORT ~https://www.gibberlings3.net/forums/forum/228-framed-alternate-chapter-6-for-bgee-and-eet/~
+VERSION ~v1.12~
 
 README ~framed/readme.framed.%LANGUAGE%.txt~ ~framed/readme.framed.english.txt~
 
@@ -67,6 +67,14 @@ LANGUAGE ~American English~ ~american~
 	~weidu_external/workspace/framed/languages/american/setup.tra~
 	~framed/languages/american/cases.tra~
 	~weidu_external/workspace/framed/languages/american/cases.tra~
+
+LANGUAGE ~Francais~ ~french~   
+	~framed/languages/french/game.tra~
+	~weidu_external/workspace/framed/languages/french/game.tra~
+	~framed/languages/french/setup.tra~
+	~weidu_external/workspace/framed/languages/french/setup.tra~
+	~framed/languages/french/cases.tra~
+	~weidu_external/workspace/framed/languages/french/cases.tra~
 
 ////////////////////////////////////////////////
 // PPROVIDE 2 DIFFERENT VERSIONS OF CHAPTER 6 //
