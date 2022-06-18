@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////////////////////
 
 // Alan Blackblade (AlanBl) replacement line
-@2000	= ~Oh, un grand nombre de personnes. La question est, qui aurait un mobile ? Il y a beaucoup de suspects. Avec en tête de liste la personne qui a tué les chefs du Trône de Fer, mais personne ne semble avoir de raison précise. Je pense que les autres ducs sont également en danger, le duc Eltan est déjà à l'agonie, atteint d'une maladie qui défie toute guérison. Difficile d'imaginer quelle soit naturelle et ne puisse être soignée à notre époque. Du poison probablement, si vous voulez mon avis.~
+@2000	= ~Oh, un grand nombre de personnes. La question est, qui aurait un mobile ? Il y a beaucoup de suspects. Avec en tête de liste la personne qui a tué les chefs du Trône de Fer, mais personne ne semble avoir de raison précise. Je pense que les autres ducs sont également en danger, le duc Eltan est déjà à l'agonie, atteint d'une maladie qui défie toute guérison. Difficile d'imaginer qu'elle soit naturelle et ne puisse être soignée à notre époque. Du poison probablement, si vous voulez mon avis.~
 
 // Flaming Fist bridge guard (FLAMC7)
 @2001	= ~Le duc Eltan ? Le duc est sur son lit de mort. Le commandant Angelo Dosan est en charge à présent.~
@@ -16,15 +16,15 @@
 // Delthyr (some harper) (DELTHY)
 @2004	= ~Bien, alors. Je suis Delthyr. Je représente les ménestrels. Je vous cherche depuis de nombreuses semaines. Les événements ont pris une mauvaise tournure récemment. Je peux vous dire tout ce que vous avez besoin de savoir.~
 @2005	= ~La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a contracté une maladie mystérieuse. Personne ne sait combien de temps il lui reste à vivre. Les nouvelles les plus importantes vous concernant, sont que vous avez été accusé d'avoir assassiné les dirigeants du Trône de fer. Tout le monde croit que vous êtes des agents d'Amn et que votre chasse aux sorcières envers le Trône de Fer n'était qu'une couverture. La tension est palpable en ce moment. Le nouveau président du Trône de Fer, Sarevok, a mis vos têtes à prix. Le Poing Enflammé a un mandat d'arrêt contre vous. Avant de continuer, dites-moi, êtes-vous coupable ?~
-@2006	= ~D'après ce que notre réseau a recueilli, le Trône de Fer se prépare à faire un coup d'état à la Porte de Baldur. Il serait dans votre intérêt d'enquêter sur ce qu'ils préparent. Peut-être que si vous pouviez rentrer dans leur citadelle, vous pourriez apprendre quelque chose. Je sais que vous traversez une période très difficile, mais vous en savez plus que quiconque sur le Trône de Fer. Si vous avez des questions à me poser, faites-le maintenant, je serai absent les prochains jours.~
+@2006	= ~D'après ce que notre réseau a recueilli, le Trône de Fer se prépare à faire un coup d'état à la Porte de Baldur. Il serait dans votre intérêt d'enquêter sur ce qu'ils préparent. Peut-être que si vous pouviez rentrer dans leur citadelle, vous pourriez apprendre quelque chose. Je sais que vous traversez une période très difficile, mais vous en savez plus que quiconque sur le Trône de Fer. Si vous avez des questions à me poser, faites-le maintenant, je serai absent les jours suivants.~
 
 // Kolvar (some Zhent) (KOLVAR)
-@2007	= ~Il semble que la majorité des hauts responsables de la Porte de Baldur pensent que vous travailliez pour Amn au moment des assassinats. Il me semble que quelqu'un veux absolument les rendre paranoïaques. Et ça marche vraiment bien. Il y a eu des rumeurs dans toute la ville à propos de l'Amn « prêt à nous envahir », un tas de conneries si vous voulez mon avis. Si vous n'êtes pas encore au courant, La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a été infecté par une sorte de maladie magique ; jusqu'à présent, son guérisseur n'a rien pu faire. D'après ce que j'ai entendu, je pense que Sarevok, le nouveau leader du Trône de Fer, essaie de s'emparer du pouvoir à la Porte de Baldur. Je vous suggère d'enquêter sur ce « Sarevok ». Vous devriez peut-être vous introduire à nouveau dans la citadelle du Trône de Fer. Vous avez des questions ? Parce que si c'est le cas, posez-les maintenant ; je suis sur le point de quitter la ville pour faire mon rapport aux gros bonnets de Darkhold.~
+@2007	= ~Il semble que la majorité des hauts responsables de la Porte de Baldur pensent que vous travailliez pour Amn au moment des assassinats. Je suppose que quelqu'un veut absolument les rendre paranoïaques. Et ça marche vraiment bien. Il y a eu des rumeurs dans toute la ville à propos de l'Amn « prêt à nous envahir », un tas de conneries si vous voulez mon avis. Si vous n'êtes pas encore au courant, La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a été infecté par une sorte de maladie magique ; jusqu'à présent, son guérisseur n'a rien pu faire. D'après ce que j'ai entendu, je pense que Sarevok, le nouveau leader du Trône de Fer, essaie de s'emparer du pouvoir à la Porte de Baldur. Je vous suggère d'enquêter sur ce « Sarevok ». Vous devriez peut-être vous introduire à nouveau dans la citadelle du Trône de Fer. Vous avez des questions ? Si c'est le cas, posez-les maintenant ; je suis sur le point de quitter la ville pour faire mon rapport aux gros bonnets de Darkhold.~
 @2008	= ~Je peux vous en apprendre beaucoup, en fait. Si vous n'êtes pas encore au courant, La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a été infecté par une sorte de maladie magique ; jusqu'à présent, son guérisseur n'a rien pu faire. D'après ce que j'ai entendu, je pense que Sarevok, le nouveau leader du Trône de Fer, essaie de s'emparer du pouvoir à la Porte de Baldur.~
 
 // Husam (shadow thief) (HUSAM)
 @2009	= ~Hé, les gars. Vous vous souvenez de moi, votre vieux pote Husam ? *hic* c'est si bon de vous revoir. Il s'est passé beaucoup de trucs dernièrement. Heh heh, j'ai entendu toutes sortes de choses. J'ai entendu dire que vous étiez recherchés pour meurtre. Hah, alors vous êtes des meurtriers, hein ? Eh bien, je vous aime bien quand même. Hé, j'ai encore des infos pour vous. Vous voulez les entendre ?~
-@2010	= ~Ok alors. Tout d'abord, mon nom est vraiment Husam. Je n'ai jamais été propriétaire d'une boutique à la Porte de Baldur. Mes associés et moi appartenons à une organisation appelée les Voleurs de l'Ombre ; vous en avez évidemment entendu parler. Je suis ici à cause des mensonges répandus sur notre organisation et sur la nation d'Amn. Je suis sûr que vous savez avoir été accusés d'être des assassins amniens, ou que les décès du Duc Entar Ecudargent et du Commandant la Balafre ont été attribués aux Voleurs de l'Ombre. Eh bien, nous n'avons rien à voir avec ça. Il semble que quelqu'un se donne beaucoup de mal pour créer un sentiment d'animosité entre nos deux pays. Amn n'a jamais été intéressé par une guerre et n'est certainement pas responsable des troubles dans cette région. Tout cela peut être mis sur le compte du Trône de Fer, ou plus précisément de Sarevok. Maintenant que je vous ai dit qui je suis, peut-être pouvez-vous me dire qui vous êtes.~
+@2010	= ~Ok alors. Tout d'abord, mon nom est vraiment Husam. Je n'ai jamais été propriétaire d'une boutique à la Porte de Baldur. Mes associés et moi appartenons à une organisation appelée les Voleurs de l'Ombre ; vous en avez évidemment entendu parler. Je suis ici à cause des mensonges répandus sur notre organisation et sur la nation d'Amn. Je suis sûr que vous savez avoir été accusés d'être des assassins amniens, ou que les décès du Duc Entar Ecudargent et du Commandant la Balafre ont été attribués aux Voleurs de l'Ombre. Eh bien, nous n'avons rien à voir avec ça. Il semble que quelqu'un se donne beaucoup de mal pour créer un sentiment d'animosité entre nos deux pays. L'Amn n'a jamais été intéressé par une guerre et n'est certainement pas responsable des troubles dans cette région. Tout cela peut être mis sur le compte du Trône de Fer, ou plus précisément de Sarevok. Maintenant que je vous ai dit qui je suis, peut-être pouvez-vous me dire qui vous êtes.~
 
 // Iron Throne Merchant on the first floor (IRONME)
 @2011	= ~Eh bien, mes amis, si vous voulez rencontrer les dirigeants du Trône de Fer, vous pouvez les trouver au dernier étage. Mais ils tiennent une importante réunion et ne veulent pas être dérangés.~
@@ -40,7 +40,7 @@
 
 // Thaldorn (a a leader of the Iron Throne) (THALDO)
 @2015	= ~Les autres chefs, Brunos et Rieltar, sont en réunion dans la pièce au bout du couloir. Voulez-vous me laisser partir maintenant, s'il vous plaît ?~
-@2016	= ~Je suis l'un des chefs de la branche ouest du Trône de Fer. Les autres se préparent à négocier avec les Chevaliers du Bouclier. Nous avons mis en place une campagne de désinformation pour rendre les Zhents responsables de tous les problèmes de la région. Nous essayons de créer des tensions entre les gouvernements de la Porte de Baldur et d'Amn. Le fer étant la ressource la plus importante dans une guerre, le conseil devra se tourner vers nous pour en obtenir. Nous avons perturbé le pays en utilisant les mercenaires des griffes noir et ceux du Frissons. La seule mine de fer connue dans la région est à Nashkel, et nous l'avons neutralisée. Nous avons notre propre mine en activité à Bois Manteau. Lorsque les dirigeants de la Porte de Baldur viendrons nous demander du fer, nous serons en mesure de faire des demandes commerciales exorbitantes, et ainsi devenir la puissance commerciale prééminente.~
+@2016	= ~Je suis l'un des chefs de la branche ouest du Trône de Fer. Les autres se préparent à négocier avec les Chevaliers du Bouclier. Nous avons mis en place une campagne de désinformation pour rendre les Zhents responsables de tous les problèmes de la région. Nous essayons de créer des tensions entre les gouvernements de la Porte de Baldur et d'Amn. Le fer étant la ressource la plus importante dans une guerre, le conseil devra se tourner vers nous pour en obtenir. Nous avons perturbé le pays en utilisant les mercenaires des griffes noires et ceux du Frisson. La seule mine de fer connue dans la région est à Nashkel, et nous l'avons neutralisée. Nous avons notre propre mine en activité à Bois Manteau. Lorsque les dirigeants de la Porte de Baldur viendrons nous demander du fer, nous serons en mesure de faire des demandes commerciales exorbitantes, et ainsi devenir la puissance commerciale prééminente.~
 
 // Merchant on the 4th floor (IRONM4)
 @2017	= ~Ils...ils sont en haut, ils se préparent pour une importante réunion.~
@@ -50,7 +50,7 @@
 @2019	= ~Est-ce une menace ? Attendez un instant... vous... vous êtes les personnes recherchées pour meurtre ! Ceux qui ont tué les marchands du Trône de Fer ! Sarevok a donné votre signalement, et les mercenaires du Poing Enflammé doivent vous tuer à vue ! Ne me faites pas de mal ! Je jure que je ne dirai à personne que je vous ai vu !~
 
 // Sorrel (Flaming Fist cleric) (SORREL)
-@2020	= ~J'ai été un peu occupé, pourquoi ? ~
+@2020	= ~J'ai été un peu occupé, pourquoi ?~
 
 // Some noble (NOBLBAZ)
 @2021	= ~Vous... vous me semblez familiers. On dirait que vous êtes le groupe de hors-la-loi qui a tué les marchands du Trône de Fer ! Le Poing Enflammé a publié une description et des croquis, et vous êtes leur portrait craché ! Ne me touchez pas !~
@@ -64,7 +64,7 @@
 @2025	= ~Et qui êtes-vous pour me menacer ? Regardons bien, hmm ? Vous semblez ressembler à ces infâmes meurtriers, ceux qui ont tué les marchands du Trône de Fer. Il est probable que vous vous fassiez passer pour eux, peut-être pour paraître plus menaçants. Je n'y crois pas une seconde. Vous ressemblez à de vulgaires canailles. Partez.~
 
 // Rumors in Beregost, Baldur's Gate, and Friendly Arm (RBEREG & RBALDU & RFRIEN)
-@2026	= ~Tu as entendu parler des meurtres ? Il semblerait que les chefs du Trône de Fer se soient fait tuer. Les personnes qui ont aidé les habitants de Nashkel ont fait le coup. C'était des agents amniens, d'après ce que j'ai entendu. Quoi qu'il en soit, le fils de l'un des marchands décédés est maintenant au commande, son nom est Sarevok je crois.~
+@2026	= ~Vous avez entendu parler des meurtres ? Il semblerait que les chefs du Trône de Fer se soient fait tuer. Les personnes qui ont aidé les habitants de Nashkel ont fait le coup. C'était des agents amniens, d'après ce que j'ai compris. Quoi qu'il en soit, le fils de l'un des marchands décédés est maintenant aux commandes, son nom est Sarevok je crois.~
 
 // Gregor, son of Iron Throne Leader Brunos (GREGOR)
 @2027	= ~Bien que votre acharnement devrait m'impressionner, ce n'est pas le cas. Vous êtes un peu retardé, selon moi. Les dirigeants... de la branche ouest du Trône de Fer... assassinés... mon père et mes amis... morts. J'aurais dû le voir venir !~
@@ -84,18 +84,18 @@
 // New Quest Dialogue //
 ////////////////////////
 // Bently
-@2100	= ~Excusez-moi, Monsieur. Des gens de Chateau-Suif sont venus ici pour vous chercher.  Ils voulaient que je vous remette ceci si je vous voyais.~ ~Excusez-moi, Madame. Des gens de Chateau-Suif sont venus ici pour vous chercher.  Ils voulaient que je vous remette ceci si je vous voyais.~
-@2101	= ~Excusez-moi, Monsieur. Des gens de Chateau-Suif étaient ici pour chercher <CHARNAME>.  Ils voulaient que je lui remette ceci si je le voyais.~ ~Excusez-moi, Madame. Des gens de Chateau-Suif étaient ici pour chercher <CHARNAME>.  Ils voulaient que je lui remette ceci si je la voyais.~
+@2100	= ~Excusez-moi, Monsieur. Des gens de Château-Suif sont venus ici pour vous chercher. Ils voulaient que je vous remette ceci si je vous voyais.~ ~Excusez-moi, Madame. Des gens de Château-Suif sont venus ici pour vous chercher. Ils voulaient que je vous remette ceci si je vous voyais.~
+@2101	= ~Excusez-moi, Monsieur. Des gens de Château-Suif étaient ici pour chercher <CHARNAME>. Ils voulaient que je lui remette ceci si je le voyais.~ ~Excusez-moi, Madame. Des gens de Château-Suif étaient ici pour chercher <CHARNAME>. Ils voulaient que je lui remette ceci si je la voyais.~
 
 // Scar
-@2102	= ~Oh, au fait, des gens de Chateau-Suif ont envoyé un messager pour chercher ceux qui ont nettoyé les mines de Nashkel. Ils voulaient que je vous remette ceci si je vous voyais.~
+@2102	= ~Oh, au fait, des gens de Château-Suif ont envoyé un messager pour chercher ceux qui ont nettoyé les mines de Nashkel. Ils voulaient que je vous remette ceci si je vous voyais.~
 
 // Keeper of the Portal (KEEPER)
-@2103	= ~Bienvenue, <CHARNAME>. Tethoril m'a dit de t'attendre. Tu peux rendre visite à tes amis, te reposer et te réapprovisionner. Puis, quand tu seras prêt à nettoyer les catacombes, retrouve-le au dernier étage de la bibliothèque.~
+@2103	= ~Bienvenue, <CHARNAME>. Tethoril m'a dit de t'attendre. Tu peux rendre visite à tes amis, te reposer et te réapprovisionner. Puis, quand tu seras prêt à nettoyer les catacombes, retrouve-le au dernier étage de la bibliothèque.~ ~Bienvenue, <CHARNAME>. Tethoril m'a dit de t'attendre. Tu peux rendre visite à tes amis, te reposer et te réapprovisionner. Puis, quand tu seras prête à nettoyer les catacombes, retrouve-le au dernier étage de la bibliothèque.~
 
 // Dreppin
-@2104	= ~C'est terrible !  Qu'est-ce que certains ne feraient pas pour quelques pièces d'or !~
-@2105	= ~Oui, les gens viennent de partout pour voir nos livres. Toutes sortes de gens : bardes, nobles, prêtres, mages. Volo lui même est venu ici et Elminster aussi, souviens-toi. On ne sait jamais, peut-être même que le vieux Drizzt viendra nous rendre visite un de ces jour.~
+@2104	= ~C'est terrible ! Qu'est-ce que certains ne feraient pas pour quelques pièces d'or !~
+@2105	= ~Oui, les gens viennent de partout pour voir nos livres. Toutes sortes de gens : bardes, nobles, prêtres, mages. Volo lui-même est venu ici et Elminster aussi, souviens-toi. On ne sait jamais, peut-être même que le vieux Drizzt viendra nous rendre visite un de ces jours.~
 
 // Parda
 @2106	= ~Oh, <CHARNAME>, j'ai entendu dire que tu étais revenu ! Je suis si heureux que tu sois là pour t'occuper des catacombes. Assurez-vous d'avoir de nombreuses protections contre le poison. Ces araignées sont redoutables.~
@@ -106,13 +106,13 @@
 // BG1RE Camryn
 @2108	= ~C'est bon de te revoir, <CHARNAME>. Je dois vraiment te remercier.~
 @2109	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons tous les deux aux jours qui suivent, peut-être que dans le futur, nous nous retrouverons tous pour boire un verre en l'honneur d'être en vie.~
-@2110	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons à ce qui nous attends dans les jours qui viennent, peut-être que nous pourrons tous nous retrouver et boire un verre en l'honneur d'être en vie.~
-@2111	= ~J'ai... écrit une lettre pour toi, aussi. Je n'étais pas sûr que nous puissions nous revoir, alors j'ai écrit comme je l'ai fait ces 30 dernières années. (rires)~
+@2110	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons à ce qui nous attend dans les jours qui viennent, peut-être que nous pourrons tous nous retrouver et boire un verre en l'honneur d'être en vie.~
+@2111	= ~J'ai... écrit une lettre pour toi, aussi. Je n'étais pas sûr que nous puissions nous revoir, alors j'ai écrit, comme je l'ai fait ces 30 dernières années. (rires)~
 @2112	= ~Adieu, <CHARNAME>. Et encore une fois, merci.~
 
 // Karan
-@2113	= ~Des araignées Karan, d'énormes araignées ! Je m'amuse juste un peu avec toi. Je ne devrais pas avoir trop de problème avec elles.~
-@2114	= ~Oh toi petit chenapan ! Cet endroit n'est plus le même depuis que tu es parti.  Bon retour parmi nous.~ ~Oh toi petite coquine ! Cet endroit n'est plus le même depuis que tu es partie.  Bon retour parmi nous.~
+@2113	= ~Des araignées Karan, d'énormes araignées ! Je m'amuse juste un peu avec toi. Je ne devrais pas avoir trop de problèmes avec elles.~
+@2114	= ~Oh toi petit chenapan ! Cet endroit n'est plus le même depuis que tu es parti. Bon retour parmi nous.~ ~Oh toi petite coquine ! Cet endroit n'est plus le même depuis que tu es partie. Bon retour parmi nous.~
 
 // Misc priest (POGHM10)
 @2115	= ~Bon retour parmi nous, <CHARNAME>. J'espère que les catacombes ne se révéleront pas trop difficiles pour toi.~
@@ -125,7 +125,7 @@
 @2118	= ~Oui, je suis prêt.~ ~Oui, je suis prête.~
 @2119	= ~Pas tout à fait, je reviendrai quand je serai prêt.~ ~Pas tout à fait, je reviendrai quand je serai prête.~
 @2120	= ~Êtes-vous prêt à nettoyer les catacombes maintenant ?~ ~Êtes-vous prête à nettoyer les catacombes maintenant ?~
-@2121	= ~L'entrée est protégée contre les intrusions accidentelles.  Je vais devoir vous envoyer dans une pièce secrète de la bibliothèque qui mène aux catacombes. Afin de garder l'emplacement secret, votre seule sortie sera à travers les tunnels qui mènent à l'extérieur.~
+@2121	= ~L'entrée est protégée contre les intrusions accidentelles. Je vais devoir vous envoyer dans une pièce secrète de la bibliothèque qui mène aux catacombes. Afin de garder l'emplacement secret, votre seule sortie sera à travers les tunnels qui mènent à l'extérieur.~
 @2122	= ~Revenez me voir une fois que vous aurez fini et j'aurai votre récompense.~
 @2123	= ~Comment vais-je passer le Gardien du Portail ?~
 @2124	= ~Je lui ai fait savoir que vous pouviez aller et venir à votre guise jusqu'à ce que je dise le contraire.~
@@ -136,22 +136,22 @@
 @2127	= ~Reviens bientôt, <CHARNAME>.~
 
 // Arkanis (ARKANI3)
-@2128	= ~Je m'aventurerais à dire que c'était un doppleganger. Je n'ose pas penser au plan tordu qui a été préparé.~
+@2128	= ~Je m'aventurerais à dire que c'était un doppelgänger. Je n'ose pas penser au plan tordu qui a été préparé.~
 @2129	= ~Peu importe leur plan, détruisons-le ensemble !~
-@2130	= ~Je préférerais que tu alerte Tethoril et le gardien du portail du danger qui les guette.  Je vais m'occuper des dopplegangers.~
+@2130	= ~Je préférerais que tu alertes Tethoril et le gardien du portail du danger qui les guette. Je vais m'occuper des doppelgängers.~
 @2131	= ~Ton aide est plus que bienvenue !~
 @2132	= ~Oui, mon enfant, en avant !~
 @2133	= ~Si tu l'ordonnes, je m'execute, mon vieux compagnon. Viens, Deder... <CHARNAME> a parlé.~ ~Si tu l'ordonnes, je m'execute, ma vieille amie. Viens, Deder... <CHARNAME> a parlé.~
 
 // Diarmid (Sarevok cronie in Candlekeep caverns) (DIARMID)
-@2134	= ~Où allez-vous Prat ? Vous ne pouvez pas avoir déjà fini... c'est bien Prat, n'est-ce pas ?  Attendez ! Vous n'êtes pas Prat !~
+@2134	= ~Où allez-vous Prat ? Vous ne pouvez pas avoir déjà fini... c'est bien Prat, n'est-ce pas ? Attendez ! Vous n'êtes pas Prat !~
 @2135	= ~Restez où vous êtes, j'ai des questions.~
-@2136	= ~Aucune chance, mon pote !~ ~Aucune chance, ma cherie !~
+@2136	= ~Aucune chance, mon pote !~ ~Aucune chance, ma chérie !~
 
 // Prat (Sarevok cronie in Candlekeep caverns) (PRAT)
-@2137	= ~Qui êtes-vous ?  Comment avez-vous passé notre... qui êtes-vous ? !~
-@2138	= ~Je pourrais vous poser la même question !  Qui êtes-vous et que faites-vous ici ?~
-@2139	= ~Bon sang !  Nous allons avoir des problèmes...~
+@2137	= ~Qui êtes-vous ? Comment avez-vous passé notre... qui êtes-vous ?!~
+@2138	= ~Je pourrais vous poser la même question ! Qui êtes-vous et que faites-vous ici ?~
+@2139	= ~Bon sang ! Nous allons avoir des problèmes...~
 
 // Gatewarden (GATEWA2)
 @2140	= ~Bienvenue à la maison, <CHARNAME>. C'est bon de te revoir.~
@@ -161,11 +161,11 @@
 @2142	= ~Heureusement que tu étais là ! Qui sait ce qui se serait passé...~
 
 // Tethoril (TETHTO2) wrap up of chapter 5 quest
-@2143	= ~Je suis soulagé de vous voir, mon enfant. Arkanis nous a prévenu à propos des dopplegangers, je... j'ai peur d'imaginer ce qu'ils comptaient accomplir.~
-@2144	= ~Quoi que ce puisse être, ce n'était pas bon.  Ils avaient pris l'apparence de tous les habitants de Chateau-Suif.~
+@2143	= ~Je suis soulagé de vous voir, mon enfant. Arkanis nous a prévenu à propos des doppelgängers, je... j'ai peur d'imaginer ce qu'ils comptaient accomplir.~
+@2144	= ~Quoi que ce puisse être, ce n'était pas bon. Ils avaient pris l'apparence de tous les habitants de Château-Suif.~
 @2145	= ~Nous allons sceller l'entrée des catacombes à nouveau. Quelqu'un a dû réussir à supprimer les protections.~
-@2146	= ~Et maintenant, votre récompense.  Les 2000 pièces d'or que nous vous avons promis pour éliminer les araignées, sont loin d'être suffisantes au regard de ce que vous avez fait pour nous.~
-@2147	= ~Veuillez accepter ceci avec notre gratitude. Vous pouvez également revenir à Chateau-Suif aussi souvent que vous le souhaitez. Votre ancienne chambre vous est exclusivement réservée. Nous ne vous remercierons jamais assez.~
+@2146	= ~Et maintenant, votre récompense. Les 2000 pièces d'or que nous vous avons promis pour éliminer les araignées, sont loin d'être suffisantes au regard de ce que vous avez fait pour nous.~
+@2147	= ~Veuillez accepter ceci avec notre gratitude. Vous pouvez également revenir à Château-Suif aussi souvent que vous le souhaitez. Votre ancienne chambre vous est exclusivement réservée. Nous ne vous remercierons jamais assez.~
 @2148	= ~Restez et parcourez la bibliothèque aussi longtemps que vous le voulez. Vous êtes chez vous à nouveau, si vous le souhaitez.~
 @2149	= ~Salutations, mon enfant.~
 @2151	= ~Et avant que j'oublie, Gorion a laissé ceci parmi ses possessions. Elle vous est adressée. Je voulais m'assurer de vous la remettre en mains propres.~
@@ -180,57 +180,57 @@
 //////////////////////////////////
 
 //Duke Eltan (DEltan)
-@2200	= ~Oh, par ailleurs, nous avons reçu un messager de Chateau-Suif. Ils ont réussi à éliminer les araignées. Vous n'avez plus besoin d'y aller à présent.~
+@2200	= ~Oh, par ailleurs, nous avons reçu un messager de Château-Suif. Ils ont réussi à éliminer les araignées. Vous n'avez plus besoin d'y aller à présent.~
 
 // Cythandria (CYTHA)
-@2201	= ~Ils sont là !  Ce sont eux qui ont tué Rieltar et Brunos !~
+@2201	= ~Ils sont là ! Ce sont eux qui ont tué Rieltar et Brunos !~
 @2202	= ~Il est là ! C'est lui qui a tué Rieltar et Brunos !~ ~Elle est là ! C'est elle qui a tué Rieltar et Brunos !~
 
 /////////////////////
 // Journal Entries //
 /////////////////////
-@3000	= ~Husam l'ivrogne  nous a dit que les dirigeants du Trône de fer se rendaient à Chateau-Suif ; nous ignorons dans quel but.~
-@3001	= ~Catacombes de Chateau-Suif
-Chateau-Suif cherche quelqu'un pour nettoyer ses catacombes d'une infestation d'araignées.~
-@3002	= ~Catacombes de Chateau-Suif
+@3000	= ~Husam l'ivrogne nous a dit que les dirigeants du Trône de fer se rendaient à Château-Suif ; nous ignorons dans quel but.~
+@3001	= ~Catacombes de Château-Suif
+Château-Suif cherche quelqu'un pour nettoyer ses catacombes d'une infestation d'araignées.~
+@3002	= ~Catacombes de Château-Suif
 Le gardien du portail m'a dit de retrouver Tethtoril au dernier étage de la bibliothèque lorsque nous serons prêts à nettoyer les catacombes.~
-@3003	= ~Catacombes de Chateau-Suif
+@3003	= ~Catacombes de Château-Suif
 Tethtoril m'a envoyé dans une pièce secrète de la bibliothèque qui mène aux catacombes. Ma seule sortie sera à travers les tunnels qui mènent à l'extérieur. Il m'a demandé de revenir quand j'aurais fini le travail.~ 
-@3004	= ~Catacombes de Chateau-Suif
-Tethtoril était ravi que je déjoue le plan des infâmes dopplegangers. Aujourd'hui Chateau-Suif redevient ma maison, si je le souhaite.~
+@3004	= ~Catacombes de Château-Suif
+Tethtoril était ravi que je déjoue le plan des infâmes doppelgängers. Aujourd'hui Château-Suif redevient ma maison, si je le souhaite.~
 @3010	= ~Chapitre 6
 
 Avec la bénédiction du Duc Eltan, j'ai enfin l'autorité, la permission et même le devoir, de mener une enquête approfondie sur le quartier général du Trône de Fer à la Porte de Baldur. Je me rapproche de plus en plus des responsables de la mort de Gorion et des attaques que j'ai subies à travers la Côte d'Épée. Je dois avancer encore un peu...~ 
 @3011	= ~Enquête sur le Trône de Fer
-Mes investigations m'ont permis d'apprendre que les dirigeants du Trône de Fer avaient prévu d'assister à une réunion à Chateau-Suif. Cependant, quelqu'un les a tués avant qu'ils n'aient eu le temps de partir. Je dois en informer le Duc Eltan immédiatement. Devaient-ils être remplacés par des dopplegangers, comme l’Émissaire Tar ?~
+Mes investigations m'ont permis d'apprendre que les dirigeants du Trône de Fer avaient prévu d'assister à une réunion à Château-Suif. Cependant, quelqu'un les a tués avant qu'ils n'aient eu le temps de partir. Je dois en informer le Duc Eltan immédiatement. Devaient-ils être remplacés par des doppelgängers, comme l’Émissaire Tar ?~
 @3012	= ~Chapitre 7
 
 Les circonstances ont soudainement pris un tour dramatique. Je suis accusé d'avoir assassiné les dirigeants du Trône de Fer. Cela va sans aucun doute augmenter le nombre de personnes qui cherchent à me tuer.~ 
 @3100	= ~Camryn et Tamah
-Camryn et Tamah se sont retrouvés et ont quitté Chateau-Suif - ensemble.~
+Camryn et Tamah se sont retrouvés et ont quitté Château-Suif - ensemble.~
 
 // Ones I need to erase since I can't close out existing ones
-@3200   = ~Camryn and Tamah
+@3200   = ~Camryn et Tamah
 
-Camryn, le maître scribe de Chateau-Suif, a écrit des lettres d'amour à son ancienne amante, Tamah qui l'a quitté il y a quelque temps. Il cachait les lettres dans la reliure des livres qu'il copiait. Je devrais être attentif aux livres qui sont un peu plus épais que d'habitude quand je serai en dehors de Chateau-Suif.~
-@3201  = ~Camryn and Tamah
+Camryn, le maître scribe de Château-Suif, a écrit des lettres d'amour à son ancienne amante, Tamah qui l'a quitté il y a quelque temps. Il cachait les lettres dans la reliure des livres qu'il copiait. Je devrais être attentif aux livres qui sont un peu plus épais que d'habitude quand je serai en dehors de Château-Suif.~
+@3201  = ~Camryn et Tamah
 
 Tamah est partie pour réfléchir à sa relation avec Camryn. Elle doit maintenant décider si elle retourne avec lui ou commence une nouvelle vie.~
-@3202  = ~Camryn and Tamah
+@3202  = ~Camryn et Tamah
 
-Tamah est partie pour réfléchir à sa relation avec Camryn. Elle doit maintenant décider si elle retourne avec lui ou commence une nouvelle vie. Qui sait si je reverrai ces deux-là un jour - peut-être à la bibliothèque de Chateau-Suif ?~
-@3203  = ~Camryn and Tamah
+Tamah est partie pour réfléchir à sa relation avec Camryn. Elle doit maintenant décider si elle retourne avec lui ou commence une nouvelle vie. Qui sait si je reverrai ces deux-là un jour - peut-être à la bibliothèque de Château-Suif ?~
+@3203  = ~Camryn et Tamah
 
-Il y avait une lettre d'amour dans la reliure du livre que j'ai apporté à Phlydia. Elle a dit que l'écriture était celle de Camryn, le maître scribe de Chateau-Suif. Je devrais la lui rapporter.~
-@3204  = ~Camryn and Tamah
+Il y avait une lettre d'amour dans la reliure du livre que j'ai apporté à Phlydia. Elle a dit que l'écriture était celle de Camryn, le maître scribe de Château-Suif. Je devrais la lui rapporter.~
+@3204  = ~Camryn et Tamah
 
 J'ai trouvé Tamah ! Elle était pétrifiée. Je l'ai libérée, et maintenant elle attend à l'auberge de Feldepost à Beregost.~
-@3205  = ~Camryn and Tamah
+@3205  = ~Camryn et Tamah
 
 Je n'avais pas envie de parler à Tamah de Camryn et de ses lettres, mais je suis sûre qu'elle sera intéressée par les lettres que je pourrais trouver.~ 
-@3206  = ~Camryn and Tamah
+@3206  = ~Camryn et Tamah
 
 Je suis sûr que Tamah sera intéressée par toutes les lettres de Camryn que je pourrais trouver.~
-@3207  = ~Camryn and Tamah
+@3207  = ~Camryn et Tamah
 
 J'ai exigé un paiement à cette pauvre folle et elle m'a donné sa maison. C'est à côté d'un lac, au sud de Beregost. Elle ne sait pas depuis combien de temps elle est abandonnée.~
