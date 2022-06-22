@@ -15,7 +15,7 @@
 
 // Delthyr (some harper) (DELTHY)
 @2004	= ~Bien, alors. Je suis Delthyr. Je représente les ménestrels. Je vous cherche depuis de nombreuses semaines. Les événements ont pris une mauvaise tournure récemment. Je peux vous dire tout ce que vous avez besoin de savoir.~
-@2005	= ~La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a contracté une maladie mystérieuse. Personne ne sait combien de temps il lui reste à vivre. Les nouvelles les plus importantes vous concernant, sont que vous avez été accusé d'avoir assassiné les dirigeants du Trône de fer. Tout le monde croit que vous êtes des agents d'Amn et que votre chasse aux sorcières envers le Trône de Fer n'était qu'une couverture. La tension est palpable en ce moment. Le nouveau président du Trône de Fer, Sarevok, a mis vos têtes à prix. Le Poing Enflammé a un mandat d'arrêt contre vous. Avant de continuer, dites-moi, êtes-vous coupable ?~
+@2005	= ~La Balafre, le commandant en second du Poing Enflammé, a été assassiné. Le Grand Duc Eltan a contracté une maladie mystérieuse. Personne ne sait combien de temps il lui reste à vivre. Les nouvelles les plus importantes vous concernant, sont que vous avez été accusés d'avoir assassiné les dirigeants du Trône de fer. Tout le monde croit que vous êtes des agents d'Amn et que votre chasse aux sorcières envers le Trône de Fer n'était qu'une couverture. La tension est palpable en ce moment. Le nouveau président du Trône de Fer, Sarevok, a mis vos têtes à prix. Le Poing Enflammé a un mandat d'arrêt contre vous. Avant de continuer, dites-moi, êtes-vous coupable ?~
 @2006	= ~D'après ce que notre réseau a recueilli, le Trône de Fer se prépare à faire un coup d'état à la Porte de Baldur. Il serait dans votre intérêt d'enquêter sur ce qu'ils préparent. Peut-être que si vous pouviez rentrer dans leur citadelle, vous pourriez apprendre quelque chose. Je sais que vous traversez une période très difficile, mais vous en savez plus que quiconque sur le Trône de Fer. Si vous avez des questions à me poser, faites-le maintenant, je serai absent les jours suivants.~
 
 // Kolvar (some Zhent) (KOLVAR)
@@ -30,7 +30,7 @@
 @2011	= ~Eh bien, mes amis, si vous voulez rencontrer les dirigeants du Trône de Fer, vous pouvez les trouver au dernier étage. Mais ils tiennent une importante réunion et ne veulent pas être dérangés.~
 
 // Flaming fist (FLAMAL)
-@2012	= ~J'ai appris par Aldeth Sashenstar que les criminels recherchés pour les meurtres de Château-Suif se cachaient chez lui. C'est pas que j'aie l'intention de faire quoi que ce soit, puisque qu'on est amis, et puis vous n'avez pas une tête d'assassin.~
+@2012	= ~J'ai appris par Aldeth Sashenstar que les criminels recherchés pour les meurtres de Château-Suif se cachaient chez lui. C'est pas que j'aie l'intention de faire quoi que ce soit, puisqu'on est amis, et puis vous n'avez pas une tête d'assassin.~ ~J'ai appris par Aldeth Sashenstar que les criminels recherchés pour les meurtres de Château-Suif se cachaient chez lui. C'est pas que j'aie l'intention de faire quoi que ce soit, puisqu'on est amis, et puis vous n'avez pas l'air d'une meurtrière.~
 
 // Throne Bartender (BART6)
 @2013	= ~De Sembie, hein ? Bon, si vous cherchez Rieltar ou Brunos, vous pouvez les trouver en haut. Mais ils sont en réunion et n'apprécieront pas d'être dérangés.~
@@ -73,12 +73,12 @@
 @2028	= ~Et bien, bonjour <CHARNAME>. Je suppose que nous aurions dû nous attendre à votre venue. On a eu une petite affaire malheureuse avec Brunos et Rieltar, n'est-ce pas ?~
 
 // Cythandria - one of Sarevok's bimbos (CYTHAN)
-@2029	= ~Mmmmm... alors vous êtes revenu. Si vous étiez intelligent, <CHARNAME>, vous seriez resté tranquille. Je ne sais pas comment vous avez échappé au piège de mon seigneur, mais vous n'irez pas plus loin. Pourquoi venir ici ? J'aurais pensé que vous vous en prendriez directement à Sarevok ?~ ~Mmmmm... alors vous êtes revenu. Si vous étiez intelligente, <CHARNAME>, vous seriez resté tranquille. Je ne sais pas comment vous avez échappé au piège de mon seigneur, mais vous n'irez pas plus loin. Pourquoi venir ici ? J'aurais pensé que vous vous en prendriez directement à Sarevok ?~
+@2029	= ~Mmmmm... alors vous êtes revenu. Si vous étiez intelligent, <CHARNAME>, vous seriez resté tranquille. Je ne sais pas comment vous avez échappé au piège de mon seigneur, mais vous n'irez pas plus loin. Pourquoi venir ici ? J'aurais pensé que vous vous en prendriez directement à Sarevok ?~ ~Mmmmm... alors vous êtes revenue. Si vous étiez intelligente, <CHARNAME>, vous seriez resté tranquille. Je ne sais pas comment vous avez échappé au piège de mon seigneur, mais vous n'irez pas plus loin. Pourquoi venir ici ? J'aurais pensé que vous vous en prendriez directement à Sarevok ?~
 
 // Garrick if BG1NPC is loaded (%GARRICK_JOINED%)
 @2030	= ~Je suppose que c'était un privilège, Garrick. Quoi qu'il en soit, allons-y, nous avons des araignées à tuer.~
 @2031	= ~Bonne attitude, mais on pourra regarder les étagères plus tard, Garrick. Nous devons d'abord tuer des araignées.~
-@2032	= ~Ça devra attendre, Garrick, on a des araignées à tuer.~
+@2032	= ~Ça devra attendre, Garrick, on a des araignées sur le feu.~
 
 ////////////////////////
 // New Quest Dialogue //
@@ -98,14 +98,14 @@
 @2105	= ~Oui, les gens viennent de partout pour voir nos livres. Toutes sortes de gens : bardes, nobles, prêtres, mages. Volo lui-même est venu ici et Elminster aussi, souviens-toi. On ne sait jamais, peut-être même que le vieux Drizzt viendra nous rendre visite un de ces jours.~
 
 // Parda
-@2106	= ~Oh, <CHARNAME>, j'ai entendu dire que tu étais revenu ! Je suis si heureux que tu sois là pour t'occuper des catacombes. Assurez-vous d'avoir de nombreuses protections contre le poison. Ces araignées sont redoutables.~
+@2106	= ~Oh, <CHARNAME>, j'ai entendu dire que tu étais revenu ! Je suis si heureux que tu sois là pour t'occuper des catacombes. Assurez-vous d'avoir de nombreuses protections contre le poison. Ces araignées sont redoutables.~ ~Oh, <CHARNAME>, j'ai entendu dire que tu étais revenue ! Je suis si heureux que tu sois là pour t'occuper des catacombes. Assurez-vous d'avoir de nombreuses protections contre le poison. Ces araignées sont redoutables.~
 
 // Fuller
 @2107	= ~Le Trône de Fer ? Et bien, tu as vraiment les mains pleines. Fais attention à toi, tu m'entends ?~
 
 // BG1RE Camryn
 @2108	= ~C'est bon de te revoir, <CHARNAME>. Je dois vraiment te remercier.~
-@2109	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons tous les deux aux jours qui suivent, peut-être que dans le futur, nous nous retrouverons tous pour boire un verre en l'honneur d'être en vie.~
+@2109	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons tous les deux aux jours qui viennent, peut-être que dans le futur, nous nous retrouverons tous pour boire un verre en l'honneur d'être en vie.~
 @2110	= ~Tu m'as rendu ma vie, <CHARNAME>. Si nous survivons à ce qui nous attend dans les jours qui viennent, peut-être que nous pourrons tous nous retrouver et boire un verre en l'honneur d'être en vie.~
 @2111	= ~J'ai... écrit une lettre pour toi, aussi. Je n'étais pas sûr que nous puissions nous revoir, alors j'ai écrit, comme je l'ai fait ces 30 dernières années. (rires)~
 @2112	= ~Adieu, <CHARNAME>. Et encore une fois, merci.~
@@ -128,7 +128,7 @@
 @2121	= ~L'entrée est protégée contre les intrusions accidentelles. Je vais devoir vous envoyer dans une pièce secrète de la bibliothèque qui mène aux catacombes. Afin de garder l'emplacement secret, votre seule sortie sera à travers les tunnels qui mènent à l'extérieur.~
 @2122	= ~Revenez me voir une fois que vous aurez fini et j'aurai votre récompense.~
 @2123	= ~Comment vais-je passer le Gardien du Portail ?~
-@2124	= ~Je lui ai fait savoir que vous pouviez aller et venir à votre guise jusqu'à ce que je dise le contraire.~
+@2124	= ~Je lui ai fait savoir que vous pouviez aller et venir à votre guise jusqu'à nouvel ordre.~
 @2125	= ~Bonne chance, <CHARNAME>, même si je doute que vous en ayez besoin.~
 
 // Keeper of the portal (KEEPER)
@@ -141,12 +141,12 @@
 @2130	= ~Je préférerais que tu alertes Tethoril et le gardien du portail du danger qui les guette. Je vais m'occuper des doppelgängers.~
 @2131	= ~Ton aide est plus que bienvenue !~
 @2132	= ~Oui, mon enfant, en avant !~
-@2133	= ~Si tu l'ordonnes, je m'execute, mon vieux compagnon. Viens, Deder... <CHARNAME> a parlé.~ ~Si tu l'ordonnes, je m'execute, ma vieille amie. Viens, Deder... <CHARNAME> a parlé.~
+@2133	= ~Si tu l'ordonnes, je m'exécute, mon bon ami. Viens, Deder... <CHARNAME> a parlé.~ ~Si tu l'ordonnes, je m'exécute, ma bonne amie. Viens, Deder... <CHARNAME> a parlé.~
 
 // Diarmid (Sarevok cronie in Candlekeep caverns) (DIARMID)
-@2134	= ~Où allez-vous Prat ? Vous ne pouvez pas avoir déjà fini... c'est bien Prat, n'est-ce pas ? Attendez ! Vous n'êtes pas Prat !~
-@2135	= ~Restez où vous êtes, j'ai des questions.~
-@2136	= ~Aucune chance, mon pote !~ ~Aucune chance, ma chérie !~
+@2134	= ~Où croyez-vous aller Prat ? Vous ne pouvez pas avoir déjà fini... vous vous appelez bien Prat, n'est-ce pas ? Attendez ! Vous n'êtes pas Prat !~
+@2135	= ~Restez où vous êtes, j'ai des questions à vous posez.~
+@2136	= ~Aucune chance, mon pote !~// ~Aucune chance, ma chérie !~
 
 // Prat (Sarevok cronie in Candlekeep caverns) (PRAT)
 @2137	= ~Qui êtes-vous ? Comment avez-vous passé notre... qui êtes-vous ?!~
@@ -162,16 +162,16 @@
 
 // Tethoril (TETHTO2) wrap up of chapter 5 quest
 @2143	= ~Je suis soulagé de vous voir, mon enfant. Arkanis nous a prévenu à propos des doppelgängers, je... j'ai peur d'imaginer ce qu'ils comptaient accomplir.~
-@2144	= ~Quoi que ce puisse être, ce n'était pas bon. Ils avaient pris l'apparence de tous les habitants de Château-Suif.~
-@2145	= ~Nous allons sceller l'entrée des catacombes à nouveau. Quelqu'un a dû réussir à supprimer les protections.~
-@2146	= ~Et maintenant, votre récompense. Les 2000 pièces d'or que nous vous avons promis pour éliminer les araignées, sont loin d'être suffisantes au regard de ce que vous avez fait pour nous.~
+@2144	= ~Quoi que ce puisse être, ce n'était pas bon. Ils avaient pris l'apparence de presque tous les habitants de Château-Suif.~
+@2145	= ~Nous allons sceller l'entrée des catacombes une nouvelle fois. Quelqu'un a dû réussir à neutraliser les protections.~
+@2146	= ~Et maintenant, votre récompense. Les 2000 pièces d'or que nous vous avons promis, pour éliminer les araignées, sont loin d'être suffisantes au regard de ce que vous avez fait pour nous.~
 @2147	= ~Veuillez accepter ceci avec notre gratitude. Vous pouvez également revenir à Château-Suif aussi souvent que vous le souhaitez. Votre ancienne chambre vous est exclusivement réservée. Nous ne vous remercierons jamais assez.~
 @2148	= ~Restez et parcourez la bibliothèque aussi longtemps que vous le voulez. Vous êtes chez vous à nouveau, si vous le souhaitez.~
 @2149	= ~Salutations, mon enfant.~
-@2151	= ~Et avant que j'oublie, Gorion a laissé ceci parmi ses possessions. Elle vous est adressée. Je voulais m'assurer de vous la remettre en mains propres.~
+@2151	= ~Et avant que j'oublie, Gorion a laissé ceci parmi ses possessions. Elle vous est adressée et je voulais m'assurer de vous la remettre en mains propres.~
 
 // Gatewarden (GATEWA2)
-@2150	= ~Et nous patrouillerons régulièrement la zone pour nous assurer qu'elle le reste, pour toujours.~
+@2150	= ~Et nous patrouillerons régulièrement la zone pour nous assurer qu'elle le reste, définitivement.~
 
 // @2151 up with Tethtoril
 
@@ -205,14 +205,16 @@ Avec la bénédiction du Duc Eltan, j'ai enfin l'autorité, la permission et même l
 Mes investigations m'ont permis d'apprendre que les dirigeants du Trône de Fer avaient prévu d'assister à une réunion à Château-Suif. Cependant, quelqu'un les a tués avant qu'ils n'aient eu le temps de partir. Je dois en informer le Duc Eltan immédiatement. Devaient-ils être remplacés par des doppelgängers, comme l’Émissaire Tar ?~
 @3012	= ~Chapitre 7
 
-Les circonstances ont soudainement pris un tour dramatique. Je suis accusé d'avoir assassiné les dirigeants du Trône de Fer. Cela va sans aucun doute augmenter le nombre de personnes qui cherchent à me tuer.~ 
+Les circonstances ont soudainement pris un tour dramatique. Je suis accusé d'avoir assassiné les dirigeants du Trône de Fer. Cela va sans aucun doute augmenter le nombre de personnes qui cherchent à me tuer.~ ~Chapitre 7
+
+Les circonstances ont soudainement pris un tour dramatique. Je suis accusée d'avoir assassiné les dirigeants du Trône de Fer. Cela va sans aucun doute augmenter le nombre de personnes qui cherchent à me tuer.~
 @3100	= ~Camryn et Tamah
 Camryn et Tamah se sont retrouvés et ont quitté Château-Suif - ensemble.~
 
 // Ones I need to erase since I can't close out existing ones
 @3200   = ~Camryn et Tamah
 
-Camryn, le maître scribe de Château-Suif, a écrit des lettres d'amour à son ancienne amante, Tamah qui l'a quitté il y a quelque temps. Il cachait les lettres dans la reliure des livres qu'il copiait. Je devrais être attentif aux livres qui sont un peu plus épais que d'habitude quand je serai en dehors de Château-Suif.~
+Camryn, le maître scribe de Château-Suif, a écrit des lettres d'amour à son ancienne amante, Tamah, qui l'a quitté il y a quelque temps. Il a donc caché ses lettres dans la reliure des livres qu'il copiait. Je devrais être attentif à ceux qui semblent un peu plus épais que la moyenne, quand je serai en dehors de Château-Suif.~
 @3201  = ~Camryn et Tamah
 
 Tamah est partie pour réfléchir à sa relation avec Camryn. Elle doit maintenant décider si elle retourne avec lui ou commence une nouvelle vie.~
@@ -227,7 +229,7 @@ Il y avait une lettre d'amour dans la reliure du livre que j'ai apporté à Phlydi
 J'ai trouvé Tamah ! Elle était pétrifiée. Je l'ai libérée, et maintenant elle attend à l'auberge de Feldepost à Beregost.~
 @3205  = ~Camryn et Tamah
 
-Je n'avais pas envie de parler à Tamah de Camryn et de ses lettres, mais je suis sûre qu'elle sera intéressée par les lettres que je pourrais trouver.~ 
+Je n'avais pas envie de parler à Tamah de Camryn et de ses lettres, mais je suis sûre qu'elle sera intéressée par celles que je pourrais trouver.~ 
 @3206  = ~Camryn et Tamah
 
 Je suis sûr que Tamah sera intéressée par toutes les lettres de Camryn que je pourrais trouver.~
