@@ -99,6 +99,9 @@ v1.9.1 - updated ini file to point at new download location
 v1.10 - fixed incompatibility with Unfinished Business mod and placed Scar's giving of work order at the end of his dialogue at the bridge
 v1.11 - tightened up the dialogues in the underground caverns 
 v1.12 - French translation by JohnBob
+v1.13 - French translation revised, by JohnBob
+      - Alternative Chapter 6 should also start if the group returns after entering the Iron Throne Headquarters before going to Candlekeep in chapter 5.
+      - Updated install order syntax for PI
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
