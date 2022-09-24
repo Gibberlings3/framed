@@ -24,6 +24,18 @@ THEN
 END
 
 IF
+	Global("EnteredIronThrone","GLOBAL",1)
+	GlobalGT("Teth","GLOBAL",1)
+	Global("#LF_AltCh6","GLOBAL",0)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		StartCutScene("#LF_Ch6")
+END
+
+
+
+IF
 	Global("#LF_Accused","GLOBAL",0)
 	Global("THRONE","GLOBAL",1)
 	Global("Chapter","GLOBAL",6)
