@@ -70,20 +70,31 @@ APPEND CYTHAN
 	END
 END
 
+/*
 ADD_TRANS_TRIGGER DELTAN 6 ~GlobalGT("Teth","GLOBAL",1)~ 16 DO 0
 EXTEND_BOTTOM DELTAN 6
 	IF ~ReputationGT(Player1,5) GlobalLT("Teth","GLOBAL",2)~ THEN REPLY #%REPLY_ELTAN_OK% /* ~We'll be back as soon as possible.~ */ DO ~SetGlobal("HelpEltan","GLOBAL",1) EraseJournalEntry(%JOURNAL_IRON_THRONE1%) EraseJournalEntry(%JOURNAL_IRON_THRONE2%) AddJournalEntry(%JOURNAL_IRON_THRONE3%,QUEST) ActionOverride("SCAR",EscapeArea())~ UNSOLVED_JOURNAL #%JOURNAL_IRON_THRONE4% GOTO TAKE_WO
 END
-ADD_STATE_TRIGGER DELTAN 7 ~Global("Chapter","GLOBAL",5)~
+
 EXTEND_BOTTOM DELTAN 16
 	IF ~GlobalLT("Teth","GLOBAL",2)~ THEN DO ~SetGlobal("HelpEltan","GLOBAL",1) EraseJournalEntry(%JOURNAL_IRON_THRONE1%) EraseJournalEntry(%JOURNAL_IRON_THRONE2%) AddJournalEntry(%JOURNAL_IRON_THRONE3%,QUEST) ActionOverride("SCAR",EscapeArea())~ UNSOLVED_JOURNAL #%JOURNAL_IRON_THRONE4% GOTO TAKE_WO
 END
+
 APPEND DELTAN
 	IF ~~ BEGIN TAKE_WO
 		SAY @2200 // ~Oh, by the way, we received a messenger from Candlekeep. They managed to clear enough of the spiders for their purposes. You'll not be needing that work order any more.~
 		IF ~~ DO ~TakePartyItem("#LF_CKWO") DestroyItem("#LF_CKWO") EraseJournalEntry(@3001)~ EXIT
 	END
 END
+
+*/
+ADD_TRANS_ACTION DELTAN BEGIN 6 END BEGIN END ~TakePartyItem("#LF_CKWO") DestroyItem("#LF_CKWO") EraseJournalEntry(@3001)~
+I_C_T DELTAN 6 ~#LF_ELTAN_TAKE_CKWO~
+== DELTAN IF ~GlobalLT("Teth","GLOBAL",2)~ THEN @2200 // ~Oh, by the way, we received a messenger from Candlekeep. They managed to clear enough of the spiders for their purposes. You'll not be needing that work order any more.~
+DO ~TakePartyItem("#LF_CKWO") DestroyItem("#LF_CKWO") EraseJournalEntry(@3001)~
+END
+
+ADD_STATE_TRIGGER DELTAN 7 ~Global("Chapter","GLOBAL",5)~
 
 REPLACE_SAY DELTHY 3 @2004
 REPLACE_SAY DELTHY 5 @2005
