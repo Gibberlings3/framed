@@ -13,6 +13,7 @@ END
 
 IF
 	Global("EnteredIronThrone","GLOBAL",0)
+	Global("Chapter","GLOBAL",5)
 	GlobalGT("Teth","GLOBAL",1)
 THEN
 	RESPONSE #100
@@ -26,6 +27,7 @@ END
 IF
 	Global("EnteredIronThrone","GLOBAL",1)
 	GlobalGT("Teth","GLOBAL",1)
+	Global("Chapter","GLOBAL",5)
 	Global("#LF_AltCh6","GLOBAL",0)
 THEN
 	RESPONSE #100
