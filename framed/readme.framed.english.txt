@@ -98,6 +98,8 @@ v1.12 - French translation by JohnBob
 v1.13 - French translation revised, by JohnBob
       - Alternative Chapter 6 should also start if the group returns after entering the Iron Throne Headquarters before going to Candlekeep in chapter 5.
       - Updated install order syntax for PI
+v1.14 - Chapter change should not be initiated in Iron Throne Head Quarters if Candlekeep was done the normal way.
+      - Optimized patching of DELTAN.dlg (I_C_T instead of EXTEND_BOTTOM + added transactions). 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
 ------------------------------------------------------------------------
