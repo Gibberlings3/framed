@@ -104,6 +104,7 @@ v1.13 - French translation revised, by JohnBob
       - Updated install order syntax for PI
 v1.14 - Chapter change should not be initiated in Iron Throne Head Quarters if Candlekeep was done the normal way.
       - Optimized patching of DELTAN.dlg (I_C_T instead of EXTEND_BOTTOM + added transactions). 
+      - French translation revised (game.tra), by JohnBob.
 
 ------------------------------------------------------------------------
 LEGAL INFORMATION
