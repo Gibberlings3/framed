@@ -29,18 +29,20 @@ ALWAYS
 
 	// This needs to be run before every component for some reason
 	// It has something to do with languages that use a different character set
-	ACTION_DEFINE_ARRAY thismod_noconvert BEGIN setup END
-	ACTION_DEFINE_ARRAY thismod_reload BEGIN game cases END
-
-	LAF HANDLE_CHARSETS 
-		INT_VAR 
-			infer_charsets = 1 
-		STR_VAR 
-			iconv_path = EVAL "%mod_root%/%tra_base%/iconv"
-			tra_path = EVAL "%tra_loc%"
-			noconvert_array = thismod_noconvert
-			reload_array = thismod_reload
-	END
+	
+	// For the EE version of the game, simply use UTF-8.
+	//ACTION_DEFINE_ARRAY thismod_noconvert BEGIN setup END
+	//ACTION_DEFINE_ARRAY thismod_reload BEGIN game cases END
+	//
+	//LAF HANDLE_CHARSETS 
+	//	INT_VAR 
+	//		infer_charsets = 1 
+	//	STR_VAR 
+	//		iconv_path = EVAL "%mod_root%/%tra_base%/iconv"
+	//		tra_path = EVAL "%tra_loc%"
+	//		noconvert_array = thismod_noconvert
+	//		reload_array = thismod_reload
+	//END
 
 	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
 		FAIL @1 /* ~Argent's DLC Merger is required before mods can be installed on this game.~ */
@@ -76,6 +78,13 @@ LANGUAGE ~Francais~ ~french~
 	~framed/languages/french/cases.tra~
 	~weidu_external/workspace/framed/languages/french/cases.tra~
 
+LANGUAGE ~Chinese~ ~schinese~   
+	~framed/languages/schinese/game.tra~
+	~weidu_external/workspace/framed/languages/schinese/game.tra~
+	~framed/languages/schinese/setup.tra~
+	~weidu_external/workspace/framed/languages/schinese/setup.tra~
+	~framed/languages/schinese/cases.tra~
+	~weidu_external/workspace/framed/languages/schinese/cases.tra~
 ////////////////////////////////////////////////
 // PPROVIDE 2 DIFFERENT VERSIONS OF CHAPTER 6 //
 ////////////////////////////////////////////////
