@@ -247,7 +247,7 @@ BEGIN
 			only_once = 1
 		STR_VAR
 			script = EVAL "%BaldursGateDocks_IronThrone_L1%"
-			match = "SetGlobal("EnteredIronThrone","GLOBAL",1)"
+			match = ~SetGlobal("EnteredIronThrone","GLOBAL",1)~
 			insert = "%mod_root%/scripts/bg0616.baf"
 	END	
 	LAF UPDATE_BCS	// default is extend top
